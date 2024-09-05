@@ -52,3 +52,33 @@ module freq_div_TB;
   
 
 endmodule
+
+
+
+
+
+//Or directly use this insted of using input and output
+
+/*
+module a;
+  reg clk;
+  reg [1:0]q;
+  always #5 clk = ~clk;
+  
+  initial begin
+    clk=1'b0;
+    q=1'b0;
+  end
+  
+  always @(posedge clk) begin
+    q <= !q;
+  end
+  
+  
+  initial begin
+    $dumpfile("dump.vcd"); 
+    $dumpvars;
+    #200 $stop;
+  end
+endmodule
+*/
