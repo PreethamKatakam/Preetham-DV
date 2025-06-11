@@ -1,0 +1,83 @@
+module partialProduct_tb();
+
+reg [7:0]x;
+reg [7:0]w;
+
+wire [10:0] partProduct0;
+wire [10:0] partProduct1;
+wire [10:0] partProduct2;
+wire [10:0] partProduct3;
+wire		[11:0]  sum_2;
+wire		[11:0]  carry_2;
+	
+
+wire[15:0] prod_out;
+wire[15:0] final_prod;
+/*
+partailProduct partailProduct_init(.x(x),
+								.w(w),
+								.partProduct0(partProduct0),
+								.partProduct1(partProduct1),
+								.partProduct2(partProduct2),
+								.partProduct3(partProduct3),
+								.sum_2(sum_2),
+								.carry_2(carry_2));
+x_in,w_in;
+output 	[10:0]	pp_row0,pp_row1,pp_row2,pp_row3;	*/							
+pp_gen pp_gen_inst(	.x_in(x),
+								.w_in(w),
+								.pp_row0(partProduct0),
+								.pp_row1(partProduct1),
+								.pp_row2(partProduct2),
+								.pp_row3(partProduct3));
+								
+	assign prod_out = {partProduct3,5'b0} + {partProduct2,3'b0} + {partProduct1,1'b0} + {partProduct0};
+	//assign final_prod = {1'b1,carry_2[11:0],3'b0} + {!partailProduct_init.s[3],sum_2[11:0],partailProduct_init.T[0]};
+
+	initial begin
+    x =8'd00;
+	w =8'd01;
+	
+	#5
+	$display(" prod_out     =%b\t",prod_out);
+	$display(" prod_out =%0d\t",prod_out);
+	$display(" final_prod     =%b\t",final_prod);
+	$display(" final_prod =%0d\t",final_prod);
+	
+	#10
+	x =8'd01;
+	w =8'd01;
+	
+	#5
+	$display(" prod_out     =%b\t",prod_out);
+	$display(" prod_out =%0d\t",prod_out);
+	$display(" final_prod     =%b\t",final_prod);
+	$display(" final_prod =%0d\t",final_prod);
+	
+	
+	#100 $stop;
+	end
+	
+	// initial begin
+    // $dumpfile("dump.vcd");
+    // $dumpvars(1);
+  // end
+  
+	
+
+	
+endmodule
+		
+/*		
+#  partProduct0 =       10000011110	
+#  partProduct1 =      10100011101	
+#  partProduct2 =    11011100001	
+#  partProduct3 =  11000000000	
+# prod_out = 1376 (0000010101100000)
+
+s[3] =0	
+#  partProduct0 =       10100000000	
+#  partProduct1 =      11000000000	
+#  partProduct2 =    11000000000	
+#  partProduct3 =  11000000000	
+# prod_out = 256 (0000000100000000)*/
