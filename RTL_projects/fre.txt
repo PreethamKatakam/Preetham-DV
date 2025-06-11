@@ -1,0 +1,28 @@
+module cntr_TB;
+
+  reg clk;
+  reg rst;
+  reg [1:0]d;
+  wire [1:0]q;
+  
+  
+  cntr cntr_inst(.clk(clk), .rst(rst),
+          .d(d), .q(q));
+          
+  always #5 clk = ~clk;
+  
+  
+  
+  
+  initial begin
+ 	clk =1'b0;
+	d  =2'b0;
+	end
+	
+
+	initial	begin
+    #100 $stop;
+  end
+  
+
+endmodule

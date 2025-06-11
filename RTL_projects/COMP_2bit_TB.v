@@ -1,0 +1,24 @@
+module COMP_2B_TB();
+
+reg [1:0] A,B;
+wire L_AB,EQ_AB,G_AB;
+
+COMP_2B COMP_2B_inst(.A(A),
+					 .B(B),
+					 .L_AB(L_AB),
+					 .EQ_AB(EQ_AB),
+					 .G_AB(G_AB));
+					 
+
+initial begin
+
+A=2'b01; B=2'b10;
+
+#10 A = 2'b01; B=2'b01; 
+#10 A = 2'b11; B=2'b10;
+#10 A = 2'b10; B=2'b01;
+#20 $stop;
+
+end
+
+endmodule

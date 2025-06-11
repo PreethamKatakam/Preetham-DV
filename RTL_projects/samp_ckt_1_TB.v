@@ -1,0 +1,31 @@
+module samp_ckt_1_TB;
+
+  reg clk;
+  reg d1;
+  wire q1,q2,q3,q4;
+  wire op;
+  
+  samp_ckt_1 samp_ckt_1_inst(.clk(clk),
+          .d1(d1), .q1(q1), .q2(q2), .q3(q3), .q4(q4), .op(op));
+          
+  always #5 clk = ~clk;
+  
+  initial begin
+	clk =1'b0;
+	d1  =1'b0;
+	//q1	=1'b0;
+	//q2	=1'b0;
+	//q3	=1'b0;
+	//q4	=1'b0;
+	end
+	
+
+	initial	begin
+	#20 d1 =1'b1;
+	#8 d1 =1'b0;
+	
+	#80 $finish;
+  end
+  
+
+endmodule

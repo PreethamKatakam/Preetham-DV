@@ -1,0 +1,21 @@
+
+module dff3 (clk,rst,
+  d1,q1);
+  input      clk,rst;
+  input      d1;//,d2; //FF inputs
+  output     q1; //FF outputs
+ 
+  reg        q1;
+
+  always @(posedge clk) //Sync rst
+  begin
+    if (rst) begin
+      // Initial value when rst is high
+      q1 <= 1'b0;
+	end
+	else begin
+      q1 <= d1;
+  end
+end
+   
+endmodule
