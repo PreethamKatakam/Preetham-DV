@@ -1,0 +1,2400 @@
+# vsim work.apb_top -assertdebug -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 09:57:18 on Mar 07,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.APB_TOP_sv_unit(fast)
+# Loading work.apb_top(fast)
+# Loading work.apb_if(fast)
+# Loading work.APB_dut(fast)
+# Loading work.apb_design_n(fast)
+# Loading work.apb_asser(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.apb_if(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /APB_TOP_sv_unit File: APB_MON1.sv Line: 15
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /APB_TOP_sv_unit File: APB_MON2.sv Line: 15
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /APB_TOP_sv_unit::apb_drv File: APB_DRV.sv Line: 12
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_test2...
+# UVM_INFO APB_MON2.sv(25) @ 5: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 15: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 25: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=0
+# UVM_INFO APB_MON1.sv(39) @ 35: uvm_test_top.env.a1.mon1 [MON1] pwdata=0,paddr=0,pwrite=0
+# UVM_INFO APB_SB.sv(33) @ 35: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=0,pkt2.prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 35: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 45: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 55: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=0
+# UVM_INFO APB_MON1.sv(39) @ 65: uvm_test_top.env.a1.mon1 [MON1] pwdata=0,paddr=0,pwrite=1
+# UVM_INFO APB_SB.sv(33) @ 65: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=0,pkt2.prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 65: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 75: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=0
+# UVM_INFO APB_MON2.sv(25) @ 85: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=0
+# UVM_INFO APB_MON1.sv(39) @ 95: uvm_test_top.env.a1.mon1 [MON1] pwdata=255,paddr=255,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 95: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=0,pkt2.prdata=255
+# UVM_INFO APB_MON2.sv(25) @ 95: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=255
+# UVM_INFO APB_MON2.sv(25) @ 105: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=255
+# UVM_INFO APB_MON2.sv(25) @ 115: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=255
+# UVM_INFO APB_MON1.sv(39) @ 125: uvm_test_top.env.a1.mon1 [MON1] pwdata=254,paddr=254,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 125: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=0,pkt2.prdata=255
+# UVM_INFO APB_MON2.sv(25) @ 125: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=255
+# UVM_INFO APB_MON2.sv(25) @ 135: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=254
+# UVM_INFO APB_MON2.sv(25) @ 145: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=254
+# UVM_INFO APB_MON1.sv(39) @ 155: uvm_test_top.env.a1.mon1 [MON1] pwdata=254,paddr=254,pwrite=0
+# UVM_INFO APB_SB.sv(33) @ 155: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=254,pkt2.prdata=254
+# UVM_INFO APB_MON2.sv(25) @ 155: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=254
+# UVM_INFO APB_MON2.sv(25) @ 165: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=254
+# UVM_INFO APB_MON2.sv(25) @ 175: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=253
+# UVM_INFO APB_MON1.sv(39) @ 185: uvm_test_top.env.a1.mon1 [MON1] pwdata=253,paddr=253,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 185: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=254,pkt2.prdata=253
+# UVM_INFO APB_MON2.sv(25) @ 185: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=253
+# UVM_INFO APB_MON2.sv(25) @ 195: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=253
+# UVM_INFO APB_MON2.sv(25) @ 205: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=253
+# UVM_INFO APB_MON1.sv(39) @ 215: uvm_test_top.env.a1.mon1 [MON1] pwdata=252,paddr=252,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 215: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=254,pkt2.prdata=252
+# UVM_INFO APB_MON2.sv(25) @ 215: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=252
+# UVM_INFO APB_MON2.sv(25) @ 225: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=252
+# UVM_INFO APB_MON2.sv(25) @ 235: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=252
+# UVM_INFO APB_MON1.sv(39) @ 245: uvm_test_top.env.a1.mon1 [MON1] pwdata=251,paddr=251,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 245: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=254,pkt2.prdata=252
+# UVM_INFO APB_MON2.sv(25) @ 245: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=252
+# UVM_INFO APB_MON2.sv(25) @ 255: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=251
+# UVM_INFO APB_MON2.sv(25) @ 265: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=251
+# UVM_INFO APB_MON1.sv(39) @ 275: uvm_test_top.env.a1.mon1 [MON1] pwdata=251,paddr=251,pwrite=0
+# UVM_INFO APB_SB.sv(33) @ 275: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=251,pkt2.prdata=251
+# UVM_INFO APB_MON2.sv(25) @ 275: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=251
+# UVM_INFO APB_MON2.sv(25) @ 285: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=251
+# UVM_INFO APB_MON2.sv(25) @ 295: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=250
+# UVM_INFO APB_MON1.sv(39) @ 305: uvm_test_top.env.a1.mon1 [MON1] pwdata=250,paddr=250,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 305: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=251,pkt2.prdata=250
+# UVM_INFO APB_MON2.sv(25) @ 305: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=250
+# UVM_INFO APB_MON2.sv(25) @ 315: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=250
+# UVM_INFO APB_MON2.sv(25) @ 325: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=250
+# UVM_INFO APB_MON1.sv(39) @ 335: uvm_test_top.env.a1.mon1 [MON1] pwdata=249,paddr=249,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 335: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=251,pkt2.prdata=249
+# UVM_INFO APB_MON2.sv(25) @ 335: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=249
+# UVM_INFO APB_MON2.sv(25) @ 345: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=249
+# UVM_INFO APB_MON2.sv(25) @ 355: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=249
+# UVM_INFO APB_MON1.sv(39) @ 365: uvm_test_top.env.a1.mon1 [MON1] pwdata=248,paddr=248,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 365: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=251,pkt2.prdata=249
+# UVM_INFO APB_MON2.sv(25) @ 365: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=249
+# UVM_INFO APB_MON2.sv(25) @ 375: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=248
+# UVM_INFO APB_MON2.sv(25) @ 385: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=248
+# UVM_INFO APB_MON1.sv(39) @ 395: uvm_test_top.env.a1.mon1 [MON1] pwdata=248,paddr=248,pwrite=0
+# UVM_INFO APB_SB.sv(33) @ 395: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=248,pkt2.prdata=248
+# UVM_INFO APB_MON2.sv(25) @ 395: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=248
+# UVM_INFO APB_MON2.sv(25) @ 405: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=248
+# UVM_INFO APB_MON2.sv(25) @ 415: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=247
+# UVM_INFO APB_MON1.sv(39) @ 425: uvm_test_top.env.a1.mon1 [MON1] pwdata=247,paddr=247,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 425: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=248,pkt2.prdata=247
+# UVM_INFO APB_MON2.sv(25) @ 425: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=247
+# UVM_INFO APB_MON2.sv(25) @ 435: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=247
+# UVM_INFO APB_MON2.sv(25) @ 445: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=247
+# UVM_INFO APB_MON1.sv(39) @ 455: uvm_test_top.env.a1.mon1 [MON1] pwdata=246,paddr=246,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 455: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=248,pkt2.prdata=246
+# UVM_INFO APB_MON2.sv(25) @ 455: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=246
+# UVM_INFO APB_MON2.sv(25) @ 465: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=246
+# UVM_INFO APB_MON2.sv(25) @ 475: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=246
+# UVM_INFO APB_MON1.sv(39) @ 485: uvm_test_top.env.a1.mon1 [MON1] pwdata=245,paddr=245,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 485: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=248,pkt2.prdata=246
+# UVM_INFO APB_MON2.sv(25) @ 485: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=246
+# UVM_INFO APB_MON2.sv(25) @ 495: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=245
+# UVM_INFO APB_MON2.sv(25) @ 505: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=245
+# UVM_INFO APB_MON1.sv(39) @ 515: uvm_test_top.env.a1.mon1 [MON1] pwdata=245,paddr=245,pwrite=0
+# UVM_INFO APB_SB.sv(33) @ 515: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=245,pkt2.prdata=245
+# UVM_INFO APB_MON2.sv(25) @ 515: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=245
+# UVM_INFO APB_MON2.sv(25) @ 525: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=245
+# UVM_INFO APB_MON2.sv(25) @ 535: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=244
+# UVM_INFO APB_MON1.sv(39) @ 545: uvm_test_top.env.a1.mon1 [MON1] pwdata=244,paddr=244,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 545: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=245,pkt2.prdata=244
+# UVM_INFO APB_MON2.sv(25) @ 545: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=244
+# UVM_INFO APB_MON2.sv(25) @ 555: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=244
+# UVM_INFO APB_MON2.sv(25) @ 565: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=244
+# UVM_INFO APB_MON1.sv(39) @ 575: uvm_test_top.env.a1.mon1 [MON1] pwdata=243,paddr=243,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 575: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=245,pkt2.prdata=243
+# UVM_INFO APB_MON2.sv(25) @ 575: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=243
+# UVM_INFO APB_MON2.sv(25) @ 585: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=243
+# UVM_INFO APB_MON2.sv(25) @ 595: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=243
+# UVM_INFO APB_MON1.sv(39) @ 605: uvm_test_top.env.a1.mon1 [MON1] pwdata=242,paddr=242,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 605: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=245,pkt2.prdata=243
+# UVM_INFO APB_MON2.sv(25) @ 605: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=243
+# UVM_INFO APB_MON2.sv(25) @ 615: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=242
+# UVM_INFO APB_MON2.sv(25) @ 625: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=242
+# UVM_INFO APB_MON1.sv(39) @ 635: uvm_test_top.env.a1.mon1 [MON1] pwdata=242,paddr=242,pwrite=0
+# UVM_INFO APB_SB.sv(33) @ 635: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=242,pkt2.prdata=242
+# UVM_INFO APB_MON2.sv(25) @ 635: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=242
+# UVM_INFO APB_MON2.sv(25) @ 645: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=242
+# UVM_INFO APB_MON2.sv(25) @ 655: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=241
+# UVM_INFO APB_MON1.sv(39) @ 665: uvm_test_top.env.a1.mon1 [MON1] pwdata=241,paddr=241,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 665: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=242,pkt2.prdata=241
+# UVM_INFO APB_MON2.sv(25) @ 665: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=241
+# UVM_INFO APB_MON2.sv(25) @ 675: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=241
+# UVM_INFO APB_MON2.sv(25) @ 685: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=241
+# UVM_INFO APB_MON1.sv(39) @ 695: uvm_test_top.env.a1.mon1 [MON1] pwdata=240,paddr=240,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 695: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=242,pkt2.prdata=240
+# UVM_INFO APB_MON2.sv(25) @ 695: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=240
+# UVM_INFO APB_MON2.sv(25) @ 705: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=240
+# UVM_INFO APB_MON2.sv(25) @ 715: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=240
+# UVM_INFO APB_MON1.sv(39) @ 725: uvm_test_top.env.a1.mon1 [MON1] pwdata=239,paddr=239,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 725: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=242,pkt2.prdata=240
+# UVM_INFO APB_MON2.sv(25) @ 725: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=240
+# UVM_INFO APB_MON2.sv(25) @ 735: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=239
+# UVM_INFO APB_MON2.sv(25) @ 745: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=239
+# UVM_INFO APB_MON1.sv(39) @ 755: uvm_test_top.env.a1.mon1 [MON1] pwdata=239,paddr=239,pwrite=0
+# UVM_INFO APB_SB.sv(33) @ 755: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=239,pkt2.prdata=239
+# UVM_INFO APB_MON2.sv(25) @ 755: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=239
+# UVM_INFO APB_MON2.sv(25) @ 765: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=239
+# UVM_INFO APB_MON2.sv(25) @ 775: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=238
+# UVM_INFO APB_MON1.sv(39) @ 785: uvm_test_top.env.a1.mon1 [MON1] pwdata=238,paddr=238,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 785: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=239,pkt2.prdata=238
+# UVM_INFO APB_MON2.sv(25) @ 785: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=238
+# UVM_INFO APB_MON2.sv(25) @ 795: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=238
+# UVM_INFO APB_MON2.sv(25) @ 805: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=238
+# UVM_INFO APB_MON1.sv(39) @ 815: uvm_test_top.env.a1.mon1 [MON1] pwdata=237,paddr=237,pwrite=1
+# UVM_INFO APB_SB.sv(37) @ 815: uvm_test_top.env.sb [SB MISMATCHED] pkt1.prdata=239,pkt2.prdata=237
+# UVM_INFO APB_MON2.sv(25) @ 815: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=237
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 820: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  140
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MON1]    27
+# [MON2]    82
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB MATCHED]     8
+# [SB MISMATCHED]    19
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 820 ns  Iteration: 54  Instance: /apb_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+quit -sim
+# End time: 10:03:31 on Mar 07,2025, Elapsed time: 0:06:13
+# Errors: 0, Warnings: 3
+pwd
+# C:/Users/preet/Downloads/AMBA-APB-PROTOCOL-DESIGN-AND-VERIFICATION-PROJECT-main/AMBA-APB-PROTOCOL-DESIGN-AND-VERIFICATION-PROJECT-main
+cd {C:\Preetham_UVM_Practice\router}
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 10:03:59 on Mar 07,2025
+# vlog -reportprogress 300 "+acc" testbench.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" 
+# ** Warning: testbench.sv(4): (vlog-13233) Design unit "testbench_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+# -- Compiling package testbench_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: rou_scoreboard.sv(101): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: rou_scoreboard.sv(104): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: rou_scoreboard.sv(107): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: rou_scoreboard.sv(110): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# -- Compiling interface rou_if
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 10:03:59 on Mar 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# vsim work.top_tb -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 10:03:59 on Mar 07,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: rou_mon.sv(31): (vopt-8637) A modport ('MONITOR') should not be used in a hierarchical path.
+# ** Warning: rou_mon.sv(31): (vopt-8637) A modport ('MONITOR') should not be used in a hierarchical path.
+# ** Warning: rou_scoreboard.sv(101): (vopt-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: rou_scoreboard.sv(104): (vopt-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: rou_scoreboard.sv(107): (vopt-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: rou_scoreboard.sv(110): (vopt-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.testbench_sv_unit(fast)
+# Loading work.top_tb(fast)
+# Loading work.rou_if(fast)
+# Loading work.router(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.rou_if(fast)
+# ** Warning: (vsim-8637) A modport ('MONITOR') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: rou_mon.sv Line: 31
+# ** Warning: (vsim-8637) A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::rou_driver File: rou_driver.sv Line: 27
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test rou_rand_test...
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 rou_rand_test           -     @471 
+#   env                        rou_env                 -     @478 
+#     agent                    rou_agent               -     @489 
+#       drv                    rou_driver              -     @523 
+#         rsp_port             uvm_analysis_port       -     @538 
+#         seq_item_port        uvm_seq_item_pull_port  -     @530 
+#       monitor                rou_mon                 -     @504 
+#         item_collected_port  uvm_analysis_port       -     @515 
+#       seqr                   rou_seqr                -     @546 
+#         rsp_export           uvm_analysis_export     -     @553 
+#         seq_item_export      uvm_seq_item_pull_imp   -     @647 
+#         arbitration_queue    array                   0     -    
+#         lock_queue           array                   0     -    
+#         num_last_reqs        integral                32    'd1  
+#         num_last_rsps        integral                32    'd1  
+#     sb                       rou_sb                  -     @496 
+#       item_collected_export  uvm_analysis_imp        -     @662 
+# ----------------------------------------------------------------
+# UVM_INFO rou_mon.sv(28) @ 0: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 0: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_driver.sv(22) @ 0: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 0: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# 5 Out_rand= x x x x
+# Rou_In[x]= x   Rou_Out[0]= x
+# Rou_In[x]= x   Rou_Out[1]= x
+# Rou_In[x]= x   Rou_Out[2]= x
+# Rou_In[x]= x   Rou_Out[3]= x
+# UVM_INFO rou_driver.sv(22) @ 5: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 5: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_mon.sv(55) @ 5: uvm_test_top.env.agent.monitor [rou_mon] en=0
+# 									Rou_In: 0 0 0 0
+# 									Rou_Out: 0 0 0 0
+# UVM_INFO rou_mon.sv(28) @ 5: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 5: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 5: uvm_test_top.env.sb [rou_sb] Rou_In: 0 0 0 0
+# UVM_INFO rou_scoreboard.sv(66) @ 5: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[x] = 0, Rou_Out[0] = 0 
+# UVM_INFO rou_scoreboard.sv(73) @ 5: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[x] = 0, Rou_Out[1] = 0 
+# UVM_INFO rou_scoreboard.sv(80) @ 5: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[x] = 0, Rou_Out[2] = 0 
+# UVM_INFO rou_scoreboard.sv(87) @ 5: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[x] = 0, Rou_Out[3] = 0 
+# 15 Out_rand= 1 3 0 2
+# Rou_In[2]= 4316   Rou_Out[0]= x
+# Rou_In[0]= 5322   Rou_Out[1]= x
+# Rou_In[3]= 5101   Rou_Out[2]= x
+# Rou_In[1]= 9852   Rou_Out[3]= x
+# UVM_INFO rou_driver.sv(22) @ 15: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 15: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 15: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 15: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 15: uvm_test_top.env.agent.monitor [rou_mon] en=0
+# 									Rou_In: 0 0 0 0
+# 									Rou_Out: 0 0 0 0
+# UVM_INFO rou_mon.sv(28) @ 15: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 15: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 15: uvm_test_top.env.sb [rou_sb] Rou_In: 0 0 0 0
+# UVM_INFO rou_scoreboard.sv(66) @ 15: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 0, Rou_Out[0] = 0 
+# UVM_INFO rou_scoreboard.sv(73) @ 15: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 0, Rou_Out[1] = 0 
+# UVM_INFO rou_scoreboard.sv(80) @ 15: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 0, Rou_Out[2] = 0 
+# UVM_INFO rou_scoreboard.sv(87) @ 15: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 0, Rou_Out[3] = 0 
+# 25 Out_rand= 1 3 0 2
+# Rou_In[2]= 9157   Rou_Out[0]= 4316
+# Rou_In[0]= 7660   Rou_Out[1]= 5322
+# Rou_In[3]= 4879   Rou_Out[2]= 5101
+# Rou_In[1]= 7101   Rou_Out[3]= 9852
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 25: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 25: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 25: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 25: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 25: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 13ed 10dc 267c 14ca
+# 									Rou_Out: 0 0 0 0
+# UVM_INFO rou_mon.sv(28) @ 25: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 25: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 25: uvm_test_top.env.sb [rou_sb] Rou_In: 0 0 0 0
+# UVM_INFO rou_scoreboard.sv(66) @ 25: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 0, Rou_Out[0] = 0 
+# UVM_INFO rou_scoreboard.sv(73) @ 25: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 0, Rou_Out[1] = 0 
+# UVM_INFO rou_scoreboard.sv(80) @ 25: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 0, Rou_Out[2] = 0 
+# UVM_INFO rou_scoreboard.sv(87) @ 25: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 0, Rou_Out[3] = 0 
+# 35 Out_rand= 1 3 0 2
+# Rou_In[2]= 9797   Rou_Out[0]= 9157
+# Rou_In[0]= 4231   Rou_Out[1]= 7660
+# Rou_In[3]= 1008   Rou_Out[2]= 4879
+# Rou_In[1]= 7019   Rou_Out[3]= 7101
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 35: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 35: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 35: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 35: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 35: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 130f 23c5 1bbd 1dec
+# 									Rou_Out: 267c 13ed 14ca 10dc
+# UVM_INFO rou_mon.sv(28) @ 35: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 35: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 35: uvm_test_top.env.sb [rou_sb] Rou_In: 5322 9852 4316 5101
+# UVM_INFO rou_scoreboard.sv(66) @ 35: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4316, Rou_Out[0] = 4316 
+# UVM_INFO rou_scoreboard.sv(73) @ 35: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5322, Rou_Out[1] = 5322 
+# UVM_INFO rou_scoreboard.sv(80) @ 35: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5101, Rou_Out[2] = 5101 
+# UVM_INFO rou_scoreboard.sv(87) @ 35: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9852, Rou_Out[3] = 9852 
+# 45 Out_rand= 1 3 0 2
+# Rou_In[2]= 9815   Rou_Out[0]= 9797
+# Rou_In[0]= 8790   Rou_Out[1]= 4231
+# Rou_In[3]= 6634   Rou_Out[2]= 1008
+# Rou_In[1]= 8778   Rou_Out[3]= 7019
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 45: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 45: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 45: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 45: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 45: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 3f0 2645 1b6b 1087
+# 									Rou_Out: 1bbd 130f 1dec 23c5
+# UVM_INFO rou_mon.sv(28) @ 45: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 45: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 45: uvm_test_top.env.sb [rou_sb] Rou_In: 7660 7101 9157 4879
+# UVM_INFO rou_scoreboard.sv(66) @ 45: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9157, Rou_Out[0] = 9157 
+# UVM_INFO rou_scoreboard.sv(73) @ 45: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7660, Rou_Out[1] = 7660 
+# UVM_INFO rou_scoreboard.sv(80) @ 45: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 4879, Rou_Out[2] = 4879 
+# UVM_INFO rou_scoreboard.sv(87) @ 45: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7101, Rou_Out[3] = 7101 
+# 55 Out_rand= 1 3 0 2
+# Rou_In[2]= 3245   Rou_Out[0]= 9815
+# Rou_In[0]= 2460   Rou_Out[1]= 8790
+# Rou_In[3]= 9121   Rou_Out[2]= 6634
+# Rou_In[1]= 9548   Rou_Out[3]= 8778
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 55: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 55: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 55: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 55: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 55: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 19ea 2657 224a 2256
+# 									Rou_Out: 1b6b 3f0 1087 2645
+# UVM_INFO rou_mon.sv(28) @ 55: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 55: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 55: uvm_test_top.env.sb [rou_sb] Rou_In: 4231 7019 9797 1008
+# UVM_INFO rou_scoreboard.sv(66) @ 55: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9797, Rou_Out[0] = 9797 
+# UVM_INFO rou_scoreboard.sv(73) @ 55: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4231, Rou_Out[1] = 4231 
+# UVM_INFO rou_scoreboard.sv(80) @ 55: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1008, Rou_Out[2] = 1008 
+# UVM_INFO rou_scoreboard.sv(87) @ 55: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7019, Rou_Out[3] = 7019 
+# 65 Out_rand= 1 3 0 2
+# Rou_In[2]= 5422   Rou_Out[0]= 3245
+# Rou_In[0]= 1242   Rou_Out[1]= 2460
+# Rou_In[3]= 7806   Rou_Out[2]= 9121
+# Rou_In[1]= 8766   Rou_Out[3]= 9548
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 65: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 65: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 65: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 65: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 65: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 23a1 cad 254c 99c
+# 									Rou_Out: 224a 19ea 2256 2657
+# UVM_INFO rou_mon.sv(28) @ 65: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 65: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 65: uvm_test_top.env.sb [rou_sb] Rou_In: 8790 8778 9815 6634
+# UVM_INFO rou_scoreboard.sv(66) @ 65: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9815, Rou_Out[0] = 9815 
+# UVM_INFO rou_scoreboard.sv(73) @ 65: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8790, Rou_Out[1] = 8790 
+# UVM_INFO rou_scoreboard.sv(80) @ 65: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 6634, Rou_Out[2] = 6634 
+# UVM_INFO rou_scoreboard.sv(87) @ 65: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8778, Rou_Out[3] = 8778 
+# 75 Out_rand= 1 3 0 2
+# Rou_In[2]= 139   Rou_Out[0]= 5422
+# Rou_In[0]= 1394   Rou_Out[1]= 1242
+# Rou_In[3]= 2081   Rou_Out[2]= 7806
+# Rou_In[1]= 211   Rou_Out[3]= 8766
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 75: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 75: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 75: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 75: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 75: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1e7e 152e 223e 4da
+# 									Rou_Out: 254c 23a1 99c cad
+# UVM_INFO rou_mon.sv(28) @ 75: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 75: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 75: uvm_test_top.env.sb [rou_sb] Rou_In: 2460 9548 3245 9121
+# UVM_INFO rou_scoreboard.sv(66) @ 75: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 3245, Rou_Out[0] = 3245 
+# UVM_INFO rou_scoreboard.sv(73) @ 75: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 2460, Rou_Out[1] = 2460 
+# UVM_INFO rou_scoreboard.sv(80) @ 75: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9121, Rou_Out[2] = 9121 
+# UVM_INFO rou_scoreboard.sv(87) @ 75: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9548, Rou_Out[3] = 9548 
+# 85 Out_rand= 1 3 0 2
+# Rou_In[2]= 4026   Rou_Out[0]= 139
+# Rou_In[0]= 5173   Rou_Out[1]= 1394
+# Rou_In[3]= 9651   Rou_Out[2]= 2081
+# Rou_In[1]= 2538   Rou_Out[3]= 211
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 85: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 85: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 85: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 85: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 85: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 821 8b d3 572
+# 									Rou_Out: 223e 1e7e 4da 152e
+# UVM_INFO rou_mon.sv(28) @ 85: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 85: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 85: uvm_test_top.env.sb [rou_sb] Rou_In: 1242 8766 5422 7806
+# UVM_INFO rou_scoreboard.sv(66) @ 85: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5422, Rou_Out[0] = 5422 
+# UVM_INFO rou_scoreboard.sv(73) @ 85: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 1242, Rou_Out[1] = 1242 
+# UVM_INFO rou_scoreboard.sv(80) @ 85: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7806, Rou_Out[2] = 7806 
+# UVM_INFO rou_scoreboard.sv(87) @ 85: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8766, Rou_Out[3] = 8766 
+# 95 Out_rand= 1 3 0 2
+# Rou_In[2]= 2159   Rou_Out[0]= 4026
+# Rou_In[0]= 747   Rou_Out[1]= 5173
+# Rou_In[3]= 1365   Rou_Out[2]= 9651
+# Rou_In[1]= 7567   Rou_Out[3]= 2538
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 95: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 95: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 95: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 95: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 95: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 25b3 fba 9ea 1435
+# 									Rou_Out: d3 821 572 8b
+# UVM_INFO rou_mon.sv(28) @ 95: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 95: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 95: uvm_test_top.env.sb [rou_sb] Rou_In: 1394 211 139 2081
+# UVM_INFO rou_scoreboard.sv(66) @ 95: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 139, Rou_Out[0] = 139 
+# UVM_INFO rou_scoreboard.sv(73) @ 95: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 1394, Rou_Out[1] = 1394 
+# UVM_INFO rou_scoreboard.sv(80) @ 95: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2081, Rou_Out[2] = 2081 
+# UVM_INFO rou_scoreboard.sv(87) @ 95: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 211, Rou_Out[3] = 211 
+# 105 Out_rand= 1 3 0 2
+# Rou_In[2]= 4594   Rou_Out[0]= 2159
+# Rou_In[0]= 7428   Rou_Out[1]= 747
+# Rou_In[3]= 7350   Rou_Out[2]= 1365
+# Rou_In[1]= 6668   Rou_Out[3]= 7567
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 105: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 105: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 105: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 105: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 105: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 555 86f 1d8f 2eb
+# 									Rou_Out: 9ea 25b3 1435 fba
+# UVM_INFO rou_mon.sv(28) @ 105: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 105: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 105: uvm_test_top.env.sb [rou_sb] Rou_In: 5173 2538 4026 9651
+# UVM_INFO rou_scoreboard.sv(66) @ 105: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4026, Rou_Out[0] = 4026 
+# UVM_INFO rou_scoreboard.sv(73) @ 105: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5173, Rou_Out[1] = 5173 
+# UVM_INFO rou_scoreboard.sv(80) @ 105: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9651, Rou_Out[2] = 9651 
+# UVM_INFO rou_scoreboard.sv(87) @ 105: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 2538, Rou_Out[3] = 2538 
+# 115 Out_rand= 1 3 0 2
+# Rou_In[2]= 5578   Rou_Out[0]= 4594
+# Rou_In[0]= 6834   Rou_Out[1]= 7428
+# Rou_In[3]= 9832   Rou_Out[2]= 7350
+# Rou_In[1]= 5573   Rou_Out[3]= 6668
+# Ola! Out_rand= 1 3 0 2
+# UVM_INFO rou_driver.sv(22) @ 115: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 115: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 115: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 115: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 115: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1cb6 11f2 1a0c 1d04
+# 									Rou_Out: 1d8f 555 2eb 86f
+# UVM_INFO rou_mon.sv(28) @ 115: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 115: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 115: uvm_test_top.env.sb [rou_sb] Rou_In: 747 7567 2159 1365
+# UVM_INFO rou_scoreboard.sv(66) @ 115: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2159, Rou_Out[0] = 2159 
+# UVM_INFO rou_scoreboard.sv(73) @ 115: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 747, Rou_Out[1] = 747 
+# UVM_INFO rou_scoreboard.sv(80) @ 115: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1365, Rou_Out[2] = 1365 
+# UVM_INFO rou_scoreboard.sv(87) @ 115: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7567, Rou_Out[3] = 7567 
+# 125 Out_rand= 1 3 0 2
+# Rou_In[2]= 1422   Rou_Out[0]= 5578
+# Rou_In[0]= 7679   Rou_Out[1]= 6834
+# Rou_In[3]= 4835   Rou_Out[2]= 9832
+# Rou_In[1]= 4504   Rou_Out[3]= 5573
+#           0
+# UVM_INFO rou_driver.sv(22) @ 125: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 125: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 125: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 125: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 125: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2668 15ca 15c5 1ab2
+# 									Rou_Out: 1a0c 1cb6 1d04 11f2
+# UVM_INFO rou_mon.sv(28) @ 125: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 125: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 125: uvm_test_top.env.sb [rou_sb] Rou_In: 7428 6668 4594 7350
+# UVM_INFO rou_scoreboard.sv(66) @ 125: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4594, Rou_Out[0] = 4594 
+# UVM_INFO rou_scoreboard.sv(73) @ 125: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7428, Rou_Out[1] = 7428 
+# UVM_INFO rou_scoreboard.sv(80) @ 125: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7350, Rou_Out[2] = 7350 
+# UVM_INFO rou_scoreboard.sv(87) @ 125: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6668, Rou_Out[3] = 6668 
+# 135 Out_rand= 3 1 2 0
+# Rou_In[0]= 6807   Rou_Out[0]= 1422
+# Rou_In[2]= 4640   Rou_Out[1]= 7679
+# Rou_In[1]= 3326   Rou_Out[2]= 4835
+# Rou_In[3]= 6689   Rou_Out[3]= 4504
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 135: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 135: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 135: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 135: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 135: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 12e3 58e 1198 1dff
+# 									Rou_Out: 15c5 2668 1ab2 15ca
+# UVM_INFO rou_mon.sv(28) @ 135: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 135: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 135: uvm_test_top.env.sb [rou_sb] Rou_In: 6834 5573 5578 9832
+# UVM_ERROR rou_scoreboard.sv(69) @ 135: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 6834, Rou_Out[0] = 5578   
+# UVM_ERROR rou_scoreboard.sv(76) @ 135: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 5578, Rou_Out[1] = 6834   
+# UVM_ERROR rou_scoreboard.sv(83) @ 135: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 5573, Rou_Out[2] = 9832   
+# UVM_ERROR rou_scoreboard.sv(90) @ 135: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 9832, Rou_Out[3] = 5573   
+# 145 Out_rand= 3 1 2 0
+# Rou_In[0]= 487   Rou_Out[0]= 6807
+# Rou_In[2]= 6010   Rou_Out[1]= 4640
+# Rou_In[1]= 812   Rou_Out[2]= 3326
+# Rou_In[3]= 2748   Rou_Out[3]= 6689
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 145: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 145: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 145: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 145: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 145: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1a21 1220 cfe 1a97
+# 									Rou_Out: 1198 12e3 1dff 58e
+# UVM_INFO rou_mon.sv(28) @ 145: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 145: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 145: uvm_test_top.env.sb [rou_sb] Rou_In: 7679 4504 1422 4835
+# UVM_ERROR rou_scoreboard.sv(69) @ 145: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 7679, Rou_Out[0] = 1422   
+# UVM_ERROR rou_scoreboard.sv(76) @ 145: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 1422, Rou_Out[1] = 7679   
+# UVM_ERROR rou_scoreboard.sv(83) @ 145: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 4504, Rou_Out[2] = 4835   
+# UVM_ERROR rou_scoreboard.sv(90) @ 145: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 4835, Rou_Out[3] = 4504   
+# 155 Out_rand= 3 1 2 0
+# Rou_In[0]= 3099   Rou_Out[0]= 487
+# Rou_In[2]= 9717   Rou_Out[1]= 6010
+# Rou_In[1]= 7508   Rou_Out[2]= 812
+# Rou_In[3]= 2285   Rou_Out[3]= 2748
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 155: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 155: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 155: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 155: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 155: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: abc 177a 32c 1e7
+# 									Rou_Out: 1a21 cfe 1220 1a97
+# UVM_INFO rou_mon.sv(28) @ 155: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 155: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 155: uvm_test_top.env.sb [rou_sb] Rou_In: 6807 3326 4640 6689
+# UVM_INFO rou_scoreboard.sv(66) @ 155: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 6807, Rou_Out[0] = 6807 
+# UVM_INFO rou_scoreboard.sv(73) @ 155: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4640, Rou_Out[1] = 4640 
+# UVM_INFO rou_scoreboard.sv(80) @ 155: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 3326, Rou_Out[2] = 3326 
+# UVM_INFO rou_scoreboard.sv(87) @ 155: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 6689, Rou_Out[3] = 6689 
+# 165 Out_rand= 3 1 2 0
+# Rou_In[0]= 2647   Rou_Out[0]= 3099
+# Rou_In[2]= 6365   Rou_Out[1]= 9717
+# Rou_In[1]= 4631   Rou_Out[2]= 7508
+# Rou_In[3]= 4429   Rou_Out[3]= 2285
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 165: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 165: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 165: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 165: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 165: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 8ed 25f5 1d54 c1b
+# 									Rou_Out: abc 32c 177a 1e7
+# UVM_INFO rou_mon.sv(28) @ 165: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 165: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 165: uvm_test_top.env.sb [rou_sb] Rou_In: 487 812 6010 2748
+# UVM_INFO rou_scoreboard.sv(66) @ 165: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 487, Rou_Out[0] = 487 
+# UVM_INFO rou_scoreboard.sv(73) @ 165: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6010, Rou_Out[1] = 6010 
+# UVM_INFO rou_scoreboard.sv(80) @ 165: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 812, Rou_Out[2] = 812 
+# UVM_INFO rou_scoreboard.sv(87) @ 165: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2748, Rou_Out[3] = 2748 
+# 175 Out_rand= 3 1 2 0
+# Rou_In[0]= 9170   Rou_Out[0]= 2647
+# Rou_In[2]= 7814   Rou_Out[1]= 6365
+# Rou_In[1]= 5966   Rou_Out[2]= 4631
+# Rou_In[3]= 8909   Rou_Out[3]= 4429
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 175: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 175: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 175: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 175: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 175: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 114d 18dd 1217 a57
+# 									Rou_Out: 8ed 1d54 25f5 c1b
+# UVM_INFO rou_mon.sv(28) @ 175: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 175: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 175: uvm_test_top.env.sb [rou_sb] Rou_In: 3099 7508 9717 2285
+# UVM_INFO rou_scoreboard.sv(66) @ 175: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3099, Rou_Out[0] = 3099 
+# UVM_INFO rou_scoreboard.sv(73) @ 175: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9717, Rou_Out[1] = 9717 
+# UVM_INFO rou_scoreboard.sv(80) @ 175: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7508, Rou_Out[2] = 7508 
+# UVM_INFO rou_scoreboard.sv(87) @ 175: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2285, Rou_Out[3] = 2285 
+# 185 Out_rand= 3 1 2 0
+# Rou_In[0]= 7929   Rou_Out[0]= 9170
+# Rou_In[2]= 2195   Rou_Out[1]= 7814
+# Rou_In[1]= 4797   Rou_Out[2]= 5966
+# Rou_In[3]= 1488   Rou_Out[3]= 8909
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 185: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 185: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 185: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 185: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 185: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 22cd 1e86 174e 23d2
+# 									Rou_Out: 114d 1217 18dd a57
+# UVM_INFO rou_mon.sv(28) @ 185: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 185: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 185: uvm_test_top.env.sb [rou_sb] Rou_In: 2647 4631 6365 4429
+# UVM_INFO rou_scoreboard.sv(66) @ 185: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 2647, Rou_Out[0] = 2647 
+# UVM_INFO rou_scoreboard.sv(73) @ 185: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6365, Rou_Out[1] = 6365 
+# UVM_INFO rou_scoreboard.sv(80) @ 185: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 4631, Rou_Out[2] = 4631 
+# UVM_INFO rou_scoreboard.sv(87) @ 185: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 4429, Rou_Out[3] = 4429 
+# 195 Out_rand= 3 1 2 0
+# Rou_In[0]= 879   Rou_Out[0]= 7929
+# Rou_In[2]= 2313   Rou_Out[1]= 2195
+# Rou_In[1]= 8756   Rou_Out[2]= 4797
+# Rou_In[3]= 592   Rou_Out[3]= 1488
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 195: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 195: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 195: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 195: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 195: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 5d0 893 12bd 1ef9
+# 									Rou_Out: 22cd 174e 1e86 23d2
+# UVM_INFO rou_mon.sv(28) @ 195: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 195: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 195: uvm_test_top.env.sb [rou_sb] Rou_In: 9170 5966 7814 8909
+# UVM_INFO rou_scoreboard.sv(66) @ 195: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 9170, Rou_Out[0] = 9170 
+# UVM_INFO rou_scoreboard.sv(73) @ 195: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 7814, Rou_Out[1] = 7814 
+# UVM_INFO rou_scoreboard.sv(80) @ 195: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5966, Rou_Out[2] = 5966 
+# UVM_INFO rou_scoreboard.sv(87) @ 195: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8909, Rou_Out[3] = 8909 
+# 205 Out_rand= 3 1 2 0
+# Rou_In[0]= 6241   Rou_Out[0]= 879
+# Rou_In[2]= 8041   Rou_Out[1]= 2313
+# Rou_In[1]= 8448   Rou_Out[2]= 8756
+# Rou_In[3]= 9542   Rou_Out[3]= 592
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 205: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 205: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 205: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 205: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 205: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 250 909 2234 36f
+# 									Rou_Out: 5d0 12bd 893 1ef9
+# UVM_INFO rou_mon.sv(28) @ 205: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 205: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 205: uvm_test_top.env.sb [rou_sb] Rou_In: 7929 4797 2195 1488
+# UVM_INFO rou_scoreboard.sv(66) @ 205: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7929, Rou_Out[0] = 7929 
+# UVM_INFO rou_scoreboard.sv(73) @ 205: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2195, Rou_Out[1] = 2195 
+# UVM_INFO rou_scoreboard.sv(80) @ 205: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 4797, Rou_Out[2] = 4797 
+# UVM_INFO rou_scoreboard.sv(87) @ 205: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1488, Rou_Out[3] = 1488 
+# 215 Out_rand= 3 1 2 0
+# Rou_In[0]= 3538   Rou_Out[0]= 6241
+# Rou_In[2]= 2818   Rou_Out[1]= 8041
+# Rou_In[1]= 4477   Rou_Out[2]= 8448
+# Rou_In[3]= 7800   Rou_Out[3]= 9542
+# Ola! Out_rand= 3 1 2 0
+# UVM_INFO rou_driver.sv(22) @ 215: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 215: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 215: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 215: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 215: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2546 1f69 2100 1861
+# 									Rou_Out: 250 2234 909 36f
+# UVM_INFO rou_mon.sv(28) @ 215: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 215: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 215: uvm_test_top.env.sb [rou_sb] Rou_In: 879 8756 2313 592
+# UVM_INFO rou_scoreboard.sv(66) @ 215: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 879, Rou_Out[0] = 879 
+# UVM_INFO rou_scoreboard.sv(73) @ 215: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2313, Rou_Out[1] = 2313 
+# UVM_INFO rou_scoreboard.sv(80) @ 215: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8756, Rou_Out[2] = 8756 
+# UVM_INFO rou_scoreboard.sv(87) @ 215: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 592, Rou_Out[3] = 592 
+# 225 Out_rand= 3 1 2 0
+# Rou_In[0]= 2272   Rou_Out[0]= 3538
+# Rou_In[2]= 228   Rou_Out[1]= 2818
+# Rou_In[1]= 8417   Rou_Out[2]= 4477
+# Rou_In[3]= 826   Rou_Out[3]= 7800
+#           2
+# UVM_INFO rou_driver.sv(22) @ 225: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 225: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 225: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 225: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 225: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1e78 b02 117d dd2
+# 									Rou_Out: 2546 2100 1f69 1861
+# UVM_INFO rou_mon.sv(28) @ 225: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 225: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 225: uvm_test_top.env.sb [rou_sb] Rou_In: 6241 8448 8041 9542
+# UVM_INFO rou_scoreboard.sv(66) @ 225: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 6241, Rou_Out[0] = 6241 
+# UVM_INFO rou_scoreboard.sv(73) @ 225: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 8041, Rou_Out[1] = 8041 
+# UVM_INFO rou_scoreboard.sv(80) @ 225: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8448, Rou_Out[2] = 8448 
+# UVM_INFO rou_scoreboard.sv(87) @ 225: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9542, Rou_Out[3] = 9542 
+# 235 Out_rand= 3 1 0 2
+# Rou_In[2]= 4225   Rou_Out[0]= 2272
+# Rou_In[0]= 7186   Rou_Out[1]= 228
+# Rou_In[1]= 8033   Rou_Out[2]= 8417
+# Rou_In[3]= 3700   Rou_Out[3]= 826
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 235: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 235: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 235: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 235: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 235: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 33a e4 20e1 8e0
+# 									Rou_Out: 1e78 117d b02 dd2
+# UVM_INFO rou_mon.sv(28) @ 235: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 235: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 235: uvm_test_top.env.sb [rou_sb] Rou_In: 3538 4477 2818 7800
+# UVM_ERROR rou_scoreboard.sv(69) @ 235: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 2818, Rou_Out[0] = 3538   
+# UVM_ERROR rou_scoreboard.sv(76) @ 235: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 3538, Rou_Out[1] = 2818   
+# UVM_INFO rou_scoreboard.sv(80) @ 235: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 4477, Rou_Out[2] = 4477 
+# UVM_INFO rou_scoreboard.sv(87) @ 235: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7800, Rou_Out[3] = 7800 
+# 245 Out_rand= 3 1 0 2
+# Rou_In[2]= 3574   Rou_Out[0]= 4225
+# Rou_In[0]= 3825   Rou_Out[1]= 7186
+# Rou_In[1]= 6596   Rou_Out[2]= 8033
+# Rou_In[3]= 9765   Rou_Out[3]= 3700
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 245: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 245: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 245: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 245: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 245: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: e74 1081 1f61 1c12
+# 									Rou_Out: 33a 20e1 e4 8e0
+# UVM_INFO rou_mon.sv(28) @ 245: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 245: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 245: uvm_test_top.env.sb [rou_sb] Rou_In: 2272 8417 228 826
+# UVM_ERROR rou_scoreboard.sv(69) @ 245: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 228, Rou_Out[0] = 2272   
+# UVM_ERROR rou_scoreboard.sv(76) @ 245: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 2272, Rou_Out[1] = 228   
+# UVM_INFO rou_scoreboard.sv(80) @ 245: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8417, Rou_Out[2] = 8417 
+# UVM_INFO rou_scoreboard.sv(87) @ 245: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 826, Rou_Out[3] = 826 
+# 255 Out_rand= 3 1 0 2
+# Rou_In[2]= 8341   Rou_Out[0]= 3574
+# Rou_In[0]= 206   Rou_Out[1]= 3825
+# Rou_In[1]= 2216   Rou_Out[2]= 6596
+# Rou_In[3]= 3126   Rou_Out[3]= 9765
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 255: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 255: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 255: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 255: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 255: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2625 df6 19c4 ef1
+# 									Rou_Out: e74 1f61 1c12 1081
+# UVM_INFO rou_mon.sv(28) @ 255: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 255: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 255: uvm_test_top.env.sb [rou_sb] Rou_In: 7186 8033 4225 3700
+# UVM_INFO rou_scoreboard.sv(66) @ 255: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4225, Rou_Out[0] = 4225 
+# UVM_INFO rou_scoreboard.sv(73) @ 255: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7186, Rou_Out[1] = 7186 
+# UVM_INFO rou_scoreboard.sv(80) @ 255: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8033, Rou_Out[2] = 8033 
+# UVM_INFO rou_scoreboard.sv(87) @ 255: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3700, Rou_Out[3] = 3700 
+# 265 Out_rand= 3 1 0 2
+# Rou_In[2]= 3172   Rou_Out[0]= 8341
+# Rou_In[0]= 3768   Rou_Out[1]= 206
+# Rou_In[1]= 586   Rou_Out[2]= 2216
+# Rou_In[3]= 3785   Rou_Out[3]= 3126
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 265: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 265: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 265: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 265: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 265: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: c36 2095 8a8 ce
+# 									Rou_Out: 2625 19c4 ef1 df6
+# UVM_INFO rou_mon.sv(28) @ 265: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 265: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 265: uvm_test_top.env.sb [rou_sb] Rou_In: 3825 6596 3574 9765
+# UVM_INFO rou_scoreboard.sv(66) @ 265: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 3574, Rou_Out[0] = 3574 
+# UVM_INFO rou_scoreboard.sv(73) @ 265: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3825, Rou_Out[1] = 3825 
+# UVM_INFO rou_scoreboard.sv(80) @ 265: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6596, Rou_Out[2] = 6596 
+# UVM_INFO rou_scoreboard.sv(87) @ 265: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9765, Rou_Out[3] = 9765 
+# 275 Out_rand= 3 1 0 2
+# Rou_In[2]= 232   Rou_Out[0]= 3172
+# Rou_In[0]= 9784   Rou_Out[1]= 3768
+# Rou_In[1]= 2525   Rou_Out[2]= 586
+# Rou_In[3]= 5138   Rou_Out[3]= 3785
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 275: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 275: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 275: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 275: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 275: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: ec9 c64 24a eb8
+# 									Rou_Out: c36 8a8 ce 2095
+# UVM_INFO rou_mon.sv(28) @ 275: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 275: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 275: uvm_test_top.env.sb [rou_sb] Rou_In: 206 2216 8341 3126
+# UVM_INFO rou_scoreboard.sv(66) @ 275: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 8341, Rou_Out[0] = 8341 
+# UVM_INFO rou_scoreboard.sv(73) @ 275: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 206, Rou_Out[1] = 206 
+# UVM_INFO rou_scoreboard.sv(80) @ 275: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 2216, Rou_Out[2] = 2216 
+# UVM_INFO rou_scoreboard.sv(87) @ 275: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3126, Rou_Out[3] = 3126 
+# 285 Out_rand= 3 1 0 2
+# Rou_In[2]= 6381   Rou_Out[0]= 232
+# Rou_In[0]= 7034   Rou_Out[1]= 9784
+# Rou_In[1]= 8097   Rou_Out[2]= 2525
+# Rou_In[3]= 2536   Rou_Out[3]= 5138
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 285: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 285: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 285: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 285: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 285: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1412 e8 9dd 2638
+# 									Rou_Out: ec9 24a eb8 c64
+# UVM_INFO rou_mon.sv(28) @ 285: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 285: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 285: uvm_test_top.env.sb [rou_sb] Rou_In: 3768 586 3172 3785
+# UVM_INFO rou_scoreboard.sv(66) @ 285: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 3172, Rou_Out[0] = 3172 
+# UVM_INFO rou_scoreboard.sv(73) @ 285: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3768, Rou_Out[1] = 3768 
+# UVM_INFO rou_scoreboard.sv(80) @ 285: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 586, Rou_Out[2] = 586 
+# UVM_INFO rou_scoreboard.sv(87) @ 285: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3785, Rou_Out[3] = 3785 
+# 295 Out_rand= 3 1 0 2
+# Rou_In[2]= 5667   Rou_Out[0]= 6381
+# Rou_In[0]= 4986   Rou_Out[1]= 7034
+# Rou_In[1]= 4685   Rou_Out[2]= 8097
+# Rou_In[3]= 4558   Rou_Out[3]= 2536
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 295: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 295: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 295: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 295: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 295: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 9e8 18ed 1fa1 1b7a
+# 									Rou_Out: 1412 9dd 2638 e8
+# UVM_INFO rou_mon.sv(28) @ 295: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 295: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 295: uvm_test_top.env.sb [rou_sb] Rou_In: 9784 2525 232 5138
+# UVM_INFO rou_scoreboard.sv(66) @ 295: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 232, Rou_Out[0] = 232 
+# UVM_INFO rou_scoreboard.sv(73) @ 295: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 9784, Rou_Out[1] = 9784 
+# UVM_INFO rou_scoreboard.sv(80) @ 295: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 2525, Rou_Out[2] = 2525 
+# UVM_INFO rou_scoreboard.sv(87) @ 295: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5138, Rou_Out[3] = 5138 
+# 305 Out_rand= 3 1 0 2
+# Rou_In[2]= 5754   Rou_Out[0]= 5667
+# Rou_In[0]= 4788   Rou_Out[1]= 4986
+# Rou_In[1]= 7395   Rou_Out[2]= 4685
+# Rou_In[3]= 2071   Rou_Out[3]= 4558
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 305: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 305: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 305: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 305: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 305: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 11ce 1623 124d 137a
+# 									Rou_Out: 9e8 1fa1 1b7a 18ed
+# UVM_INFO rou_mon.sv(28) @ 305: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 305: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 305: uvm_test_top.env.sb [rou_sb] Rou_In: 7034 8097 6381 2536
+# UVM_INFO rou_scoreboard.sv(66) @ 305: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6381, Rou_Out[0] = 6381 
+# UVM_INFO rou_scoreboard.sv(73) @ 305: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7034, Rou_Out[1] = 7034 
+# UVM_INFO rou_scoreboard.sv(80) @ 305: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8097, Rou_Out[2] = 8097 
+# UVM_INFO rou_scoreboard.sv(87) @ 305: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2536, Rou_Out[3] = 2536 
+# 315 Out_rand= 3 1 0 2
+# Rou_In[2]= 2399   Rou_Out[0]= 5754
+# Rou_In[0]= 3700   Rou_Out[1]= 4788
+# Rou_In[1]= 8201   Rou_Out[2]= 7395
+# Rou_In[3]= 3103   Rou_Out[3]= 2071
+# Ola! Out_rand= 3 1 0 2
+# UVM_INFO rou_driver.sv(22) @ 315: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 315: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 315: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 315: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 315: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 817 167a 1ce3 12b4
+# 									Rou_Out: 11ce 124d 137a 1623
+# UVM_INFO rou_mon.sv(28) @ 315: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 315: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 315: uvm_test_top.env.sb [rou_sb] Rou_In: 4986 4685 5667 4558
+# UVM_INFO rou_scoreboard.sv(66) @ 315: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5667, Rou_Out[0] = 5667 
+# UVM_INFO rou_scoreboard.sv(73) @ 315: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4986, Rou_Out[1] = 4986 
+# UVM_INFO rou_scoreboard.sv(80) @ 315: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 4685, Rou_Out[2] = 4685 
+# UVM_INFO rou_scoreboard.sv(87) @ 315: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 4558, Rou_Out[3] = 4558 
+# 325 Out_rand= 3 1 0 2
+# Rou_In[2]= 8557   Rou_Out[0]= 2399
+# Rou_In[0]= 6756   Rou_Out[1]= 3700
+# Rou_In[1]= 77   Rou_Out[2]= 8201
+# Rou_In[3]= 7237   Rou_Out[3]= 3103
+#           2
+# UVM_INFO rou_driver.sv(22) @ 325: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 325: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 325: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 325: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 325: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: c1f 95f 2009 e74
+# 									Rou_Out: 817 1ce3 12b4 167a
+# UVM_INFO rou_mon.sv(28) @ 325: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 325: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 325: uvm_test_top.env.sb [rou_sb] Rou_In: 4788 7395 5754 2071
+# UVM_INFO rou_scoreboard.sv(66) @ 325: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5754, Rou_Out[0] = 5754 
+# UVM_INFO rou_scoreboard.sv(73) @ 325: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4788, Rou_Out[1] = 4788 
+# UVM_INFO rou_scoreboard.sv(80) @ 325: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7395, Rou_Out[2] = 7395 
+# UVM_INFO rou_scoreboard.sv(87) @ 325: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2071, Rou_Out[3] = 2071 
+# 335 Out_rand= 2 1 3 0
+# Rou_In[0]= 237   Rou_Out[0]= 8557
+# Rou_In[3]= 5685   Rou_Out[1]= 6756
+# Rou_In[1]= 5833   Rou_Out[2]= 77
+# Rou_In[2]= 5525   Rou_Out[3]= 7237
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 335: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 335: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 335: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 335: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 335: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1c45 216d 4d 1a64
+# 									Rou_Out: c1f 2009 e74 95f
+# UVM_INFO rou_mon.sv(28) @ 335: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 335: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 335: uvm_test_top.env.sb [rou_sb] Rou_In: 3700 8201 2399 3103
+# UVM_ERROR rou_scoreboard.sv(69) @ 335: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 3700, Rou_Out[0] = 2399   
+# UVM_ERROR rou_scoreboard.sv(76) @ 335: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 3103, Rou_Out[1] = 3700   
+# UVM_INFO rou_scoreboard.sv(80) @ 335: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8201, Rou_Out[2] = 8201 
+# UVM_ERROR rou_scoreboard.sv(90) @ 335: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 2399, Rou_Out[3] = 3103   
+# 345 Out_rand= 2 1 3 0
+# Rou_In[0]= 8321   Rou_Out[0]= 237
+# Rou_In[3]= 9210   Rou_Out[1]= 5685
+# Rou_In[1]= 2736   Rou_Out[2]= 5833
+# Rou_In[2]= 9530   Rou_Out[3]= 5525
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 345: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 345: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 345: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 345: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 345: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1635 1595 16c9 ed
+# 									Rou_Out: 1c45 4d 1a64 216d
+# UVM_INFO rou_mon.sv(28) @ 345: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 345: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 345: uvm_test_top.env.sb [rou_sb] Rou_In: 6756 77 8557 7237
+# UVM_ERROR rou_scoreboard.sv(69) @ 345: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 6756, Rou_Out[0] = 8557   
+# UVM_ERROR rou_scoreboard.sv(76) @ 345: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 7237, Rou_Out[1] = 6756   
+# UVM_INFO rou_scoreboard.sv(80) @ 345: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 77, Rou_Out[2] = 77 
+# UVM_ERROR rou_scoreboard.sv(90) @ 345: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 8557, Rou_Out[3] = 7237   
+# 355 Out_rand= 2 1 3 0
+# Rou_In[0]= 4340   Rou_Out[0]= 8321
+# Rou_In[3]= 8748   Rou_Out[1]= 9210
+# Rou_In[1]= 3174   Rou_Out[2]= 2736
+# Rou_In[2]= 6030   Rou_Out[3]= 9530
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 355: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 355: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 355: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 355: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 355: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 23fa 253a ab0 2081
+# 									Rou_Out: 1595 16c9 1635 ed
+# UVM_INFO rou_mon.sv(28) @ 355: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 355: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 355: uvm_test_top.env.sb [rou_sb] Rou_In: 237 5833 5525 5685
+# UVM_INFO rou_scoreboard.sv(66) @ 355: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 237, Rou_Out[0] = 237 
+# UVM_INFO rou_scoreboard.sv(73) @ 355: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5685, Rou_Out[1] = 5685 
+# UVM_INFO rou_scoreboard.sv(80) @ 355: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5833, Rou_Out[2] = 5833 
+# UVM_INFO rou_scoreboard.sv(87) @ 355: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5525, Rou_Out[3] = 5525 
+# 365 Out_rand= 2 1 3 0
+# Rou_In[0]= 9433   Rou_Out[0]= 4340
+# Rou_In[3]= 8828   Rou_Out[1]= 8748
+# Rou_In[1]= 7847   Rou_Out[2]= 3174
+# Rou_In[2]= 6927   Rou_Out[3]= 6030
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 365: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 365: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 365: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 365: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 365: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 222c 178e c66 10f4
+# 									Rou_Out: 253a ab0 23fa 2081
+# UVM_INFO rou_mon.sv(28) @ 365: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 365: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 365: uvm_test_top.env.sb [rou_sb] Rou_In: 8321 2736 9530 9210
+# UVM_INFO rou_scoreboard.sv(66) @ 365: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8321, Rou_Out[0] = 8321 
+# UVM_INFO rou_scoreboard.sv(73) @ 365: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9210, Rou_Out[1] = 9210 
+# UVM_INFO rou_scoreboard.sv(80) @ 365: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 2736, Rou_Out[2] = 2736 
+# UVM_INFO rou_scoreboard.sv(87) @ 365: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9530, Rou_Out[3] = 9530 
+# 375 Out_rand= 2 1 3 0
+# Rou_In[0]= 9433   Rou_Out[0]= 9433
+# Rou_In[3]= 5622   Rou_Out[1]= 8828
+# Rou_In[1]= 16   Rou_Out[2]= 7847
+# Rou_In[2]= 151   Rou_Out[3]= 6927
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 375: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 375: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 375: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 375: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 375: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 227c 1b0f 1ea7 24d9
+# 									Rou_Out: 178e c66 222c 10f4
+# UVM_INFO rou_mon.sv(28) @ 375: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 375: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 375: uvm_test_top.env.sb [rou_sb] Rou_In: 4340 3174 6030 8748
+# UVM_INFO rou_scoreboard.sv(66) @ 375: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4340, Rou_Out[0] = 4340 
+# UVM_INFO rou_scoreboard.sv(73) @ 375: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8748, Rou_Out[1] = 8748 
+# UVM_INFO rou_scoreboard.sv(80) @ 375: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 3174, Rou_Out[2] = 3174 
+# UVM_INFO rou_scoreboard.sv(87) @ 375: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6030, Rou_Out[3] = 6030 
+# 385 Out_rand= 2 1 3 0
+# Rou_In[0]= 7495   Rou_Out[0]= 9433
+# Rou_In[3]= 9933   Rou_Out[1]= 5622
+# Rou_In[1]= 7001   Rou_Out[2]= 16
+# Rou_In[2]= 1864   Rou_Out[3]= 151
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 385: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 385: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 385: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 385: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 385: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 15f6 97 10 24d9
+# 									Rou_Out: 1b0f 1ea7 227c 24d9
+# UVM_INFO rou_mon.sv(28) @ 385: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 385: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 385: uvm_test_top.env.sb [rou_sb] Rou_In: 9433 7847 6927 8828
+# UVM_INFO rou_scoreboard.sv(66) @ 385: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 9433, Rou_Out[0] = 9433 
+# UVM_INFO rou_scoreboard.sv(73) @ 385: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8828, Rou_Out[1] = 8828 
+# UVM_INFO rou_scoreboard.sv(80) @ 385: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7847, Rou_Out[2] = 7847 
+# UVM_INFO rou_scoreboard.sv(87) @ 385: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6927, Rou_Out[3] = 6927 
+# 395 Out_rand= 2 1 3 0
+# Rou_In[0]= 8   Rou_Out[0]= 7495
+# Rou_In[3]= 1861   Rou_Out[1]= 9933
+# Rou_In[1]= 710   Rou_Out[2]= 7001
+# Rou_In[2]= 4384   Rou_Out[3]= 1864
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 395: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 395: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 395: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 395: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 395: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 26cd 748 1b59 1d47
+# 									Rou_Out: 97 10 15f6 24d9
+# UVM_INFO rou_mon.sv(28) @ 395: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 395: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 395: uvm_test_top.env.sb [rou_sb] Rou_In: 9433 16 151 5622
+# UVM_INFO rou_scoreboard.sv(66) @ 395: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 9433, Rou_Out[0] = 9433 
+# UVM_INFO rou_scoreboard.sv(73) @ 395: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5622, Rou_Out[1] = 5622 
+# UVM_INFO rou_scoreboard.sv(80) @ 395: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 16, Rou_Out[2] = 16 
+# UVM_INFO rou_scoreboard.sv(87) @ 395: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 151, Rou_Out[3] = 151 
+# 405 Out_rand= 2 1 3 0
+# Rou_In[0]= 4202   Rou_Out[0]= 8
+# Rou_In[3]= 2063   Rou_Out[1]= 1861
+# Rou_In[1]= 508   Rou_Out[2]= 710
+# Rou_In[2]= 9038   Rou_Out[3]= 4384
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 405: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 405: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 405: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 405: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 405: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 745 1120 2c6 8
+# 									Rou_Out: 748 1b59 26cd 1d47
+# UVM_INFO rou_mon.sv(28) @ 405: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 405: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 405: uvm_test_top.env.sb [rou_sb] Rou_In: 7495 7001 1864 9933
+# UVM_INFO rou_scoreboard.sv(66) @ 405: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7495, Rou_Out[0] = 7495 
+# UVM_INFO rou_scoreboard.sv(73) @ 405: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9933, Rou_Out[1] = 9933 
+# UVM_INFO rou_scoreboard.sv(80) @ 405: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7001, Rou_Out[2] = 7001 
+# UVM_INFO rou_scoreboard.sv(87) @ 405: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1864, Rou_Out[3] = 1864 
+# 415 Out_rand= 2 1 3 0
+# Rou_In[0]= 2177   Rou_Out[0]= 4202
+# Rou_In[3]= 3196   Rou_Out[1]= 2063
+# Rou_In[1]= 1580   Rou_Out[2]= 508
+# Rou_In[2]= 1748   Rou_Out[3]= 9038
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 415: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 415: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 415: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 415: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 415: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 80f 234e 1fc 106a
+# 									Rou_Out: 1120 2c6 745 8
+# UVM_INFO rou_mon.sv(28) @ 415: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 415: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 415: uvm_test_top.env.sb [rou_sb] Rou_In: 8 710 4384 1861
+# UVM_INFO rou_scoreboard.sv(66) @ 415: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8, Rou_Out[0] = 8 
+# UVM_INFO rou_scoreboard.sv(73) @ 415: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1861, Rou_Out[1] = 1861 
+# UVM_INFO rou_scoreboard.sv(80) @ 415: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 710, Rou_Out[2] = 710 
+# UVM_INFO rou_scoreboard.sv(87) @ 415: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4384, Rou_Out[3] = 4384 
+# 425 Out_rand= 2 1 3 0
+# Rou_In[0]= 3734   Rou_Out[0]= 2177
+# Rou_In[3]= 4983   Rou_Out[1]= 3196
+# Rou_In[1]= 3707   Rou_Out[2]= 1580
+# Rou_In[2]= 5   Rou_Out[3]= 1748
+#           2
+# UVM_INFO rou_driver.sv(22) @ 425: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 425: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 425: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 425: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 425: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: c7c 6d4 62c 881
+# 									Rou_Out: 234e 1fc 80f 106a
+# UVM_INFO rou_mon.sv(28) @ 425: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 425: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 425: uvm_test_top.env.sb [rou_sb] Rou_In: 4202 508 9038 2063
+# UVM_INFO rou_scoreboard.sv(66) @ 425: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4202, Rou_Out[0] = 4202 
+# UVM_INFO rou_scoreboard.sv(73) @ 425: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2063, Rou_Out[1] = 2063 
+# UVM_INFO rou_scoreboard.sv(80) @ 425: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 508, Rou_Out[2] = 508 
+# UVM_INFO rou_scoreboard.sv(87) @ 425: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9038, Rou_Out[3] = 9038 
+# 435 Out_rand= 1 0 3 2
+# Rou_In[2]= 9426   Rou_Out[0]= 3734
+# Rou_In[3]= 7819   Rou_Out[1]= 4983
+# Rou_In[0]= 3907   Rou_Out[2]= 3707
+# Rou_In[1]= 7058   Rou_Out[3]= 5
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 435: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 435: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 435: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 435: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 435: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1377 5 e7b e96
+# 									Rou_Out: 6d4 62c c7c 881
+# UVM_INFO rou_mon.sv(28) @ 435: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 435: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 435: uvm_test_top.env.sb [rou_sb] Rou_In: 2177 1580 1748 3196
+# UVM_ERROR rou_scoreboard.sv(69) @ 435: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 1748, Rou_Out[0] = 2177   
+# UVM_INFO rou_scoreboard.sv(73) @ 435: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3196, Rou_Out[1] = 3196 
+# UVM_ERROR rou_scoreboard.sv(83) @ 435: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 2177, Rou_Out[2] = 1580   
+# UVM_ERROR rou_scoreboard.sv(90) @ 435: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 1580, Rou_Out[3] = 1748   
+# 445 Out_rand= 1 0 3 2
+# Rou_In[2]= 3453   Rou_Out[0]= 9426
+# Rou_In[3]= 964   Rou_Out[1]= 7819
+# Rou_In[0]= 7246   Rou_Out[2]= 3907
+# Rou_In[1]= 6821   Rou_Out[3]= 7058
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 445: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 445: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 445: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 445: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 445: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1e8b 24d2 1b92 f43
+# 									Rou_Out: 5 e7b 1377 e96
+# UVM_INFO rou_mon.sv(28) @ 445: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 445: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 445: uvm_test_top.env.sb [rou_sb] Rou_In: 3734 3707 5 4983
+# UVM_ERROR rou_scoreboard.sv(69) @ 445: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 5, Rou_Out[0] = 3734   
+# UVM_INFO rou_scoreboard.sv(73) @ 445: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 4983, Rou_Out[1] = 4983 
+# UVM_ERROR rou_scoreboard.sv(83) @ 445: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 3734, Rou_Out[2] = 3707   
+# UVM_ERROR rou_scoreboard.sv(90) @ 445: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 3707, Rou_Out[3] = 5   
+# 455 Out_rand= 1 0 3 2
+# Rou_In[2]= 7069   Rou_Out[0]= 3453
+# Rou_In[3]= 1106   Rou_Out[1]= 964
+# Rou_In[0]= 7129   Rou_Out[2]= 7246
+# Rou_In[1]= 2575   Rou_Out[3]= 6821
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 455: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 455: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 455: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 455: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 455: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 3c4 d7d 1aa5 1c4e
+# 									Rou_Out: 1b92 f43 1e8b 24d2
+# UVM_INFO rou_mon.sv(28) @ 455: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 455: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 455: uvm_test_top.env.sb [rou_sb] Rou_In: 3907 7058 9426 7819
+# UVM_INFO rou_scoreboard.sv(66) @ 455: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9426, Rou_Out[0] = 9426 
+# UVM_INFO rou_scoreboard.sv(73) @ 455: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7819, Rou_Out[1] = 7819 
+# UVM_INFO rou_scoreboard.sv(80) @ 455: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3907, Rou_Out[2] = 3907 
+# UVM_INFO rou_scoreboard.sv(87) @ 455: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7058, Rou_Out[3] = 7058 
+# 465 Out_rand= 1 0 3 2
+# Rou_In[2]= 4682   Rou_Out[0]= 7069
+# Rou_In[3]= 7210   Rou_Out[1]= 1106
+# Rou_In[0]= 7869   Rou_Out[2]= 7129
+# Rou_In[1]= 535   Rou_Out[3]= 2575
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 465: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 465: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 465: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 465: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 465: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 452 1b9d a0f 1bd9
+# 									Rou_Out: 1aa5 1c4e 3c4 d7d
+# UVM_INFO rou_mon.sv(28) @ 465: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 465: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 465: uvm_test_top.env.sb [rou_sb] Rou_In: 7246 6821 3453 964
+# UVM_INFO rou_scoreboard.sv(66) @ 465: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 3453, Rou_Out[0] = 3453 
+# UVM_INFO rou_scoreboard.sv(73) @ 465: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 964, Rou_Out[1] = 964 
+# UVM_INFO rou_scoreboard.sv(80) @ 465: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7246, Rou_Out[2] = 7246 
+# UVM_INFO rou_scoreboard.sv(87) @ 465: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6821, Rou_Out[3] = 6821 
+# 475 Out_rand= 1 0 3 2
+# Rou_In[2]= 2892   Rou_Out[0]= 4682
+# Rou_In[3]= 7298   Rou_Out[1]= 7210
+# Rou_In[0]= 8396   Rou_Out[2]= 7869
+# Rou_In[1]= 2801   Rou_Out[3]= 535
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 475: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 475: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 475: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 475: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 475: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1c2a 124a 217 1ebd
+# 									Rou_Out: a0f 1bd9 452 1b9d
+# UVM_INFO rou_mon.sv(28) @ 475: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 475: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 475: uvm_test_top.env.sb [rou_sb] Rou_In: 7129 2575 7069 1106
+# UVM_INFO rou_scoreboard.sv(66) @ 475: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 7069, Rou_Out[0] = 7069 
+# UVM_INFO rou_scoreboard.sv(73) @ 475: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1106, Rou_Out[1] = 1106 
+# UVM_INFO rou_scoreboard.sv(80) @ 475: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7129, Rou_Out[2] = 7129 
+# UVM_INFO rou_scoreboard.sv(87) @ 475: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 2575, Rou_Out[3] = 2575 
+# 485 Out_rand= 1 0 3 2
+# Rou_In[2]= 2887   Rou_Out[0]= 2892
+# Rou_In[3]= 997   Rou_Out[1]= 7298
+# Rou_In[0]= 4442   Rou_Out[2]= 8396
+# Rou_In[1]= 3715   Rou_Out[3]= 2801
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 485: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 485: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 485: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 485: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 485: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1c82 b4c af1 20cc
+# 									Rou_Out: 217 1ebd 1c2a 124a
+# UVM_INFO rou_mon.sv(28) @ 485: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 485: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 485: uvm_test_top.env.sb [rou_sb] Rou_In: 7869 535 4682 7210
+# UVM_INFO rou_scoreboard.sv(66) @ 485: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4682, Rou_Out[0] = 4682 
+# UVM_INFO rou_scoreboard.sv(73) @ 485: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7210, Rou_Out[1] = 7210 
+# UVM_INFO rou_scoreboard.sv(80) @ 485: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7869, Rou_Out[2] = 7869 
+# UVM_INFO rou_scoreboard.sv(87) @ 485: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 535, Rou_Out[3] = 535 
+# 495 Out_rand= 1 0 3 2
+# Rou_In[2]= 2397   Rou_Out[0]= 2887
+# Rou_In[3]= 2771   Rou_Out[1]= 997
+# Rou_In[0]= 2410   Rou_Out[2]= 4442
+# Rou_In[1]= 7889   Rou_Out[3]= 3715
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 495: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 495: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 495: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 495: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 495: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 3e5 b47 e83 115a
+# 									Rou_Out: af1 20cc 1c82 b4c
+# UVM_INFO rou_mon.sv(28) @ 495: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 495: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 495: uvm_test_top.env.sb [rou_sb] Rou_In: 8396 2801 2892 7298
+# UVM_INFO rou_scoreboard.sv(66) @ 495: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2892, Rou_Out[0] = 2892 
+# UVM_INFO rou_scoreboard.sv(73) @ 495: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7298, Rou_Out[1] = 7298 
+# UVM_INFO rou_scoreboard.sv(80) @ 495: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8396, Rou_Out[2] = 8396 
+# UVM_INFO rou_scoreboard.sv(87) @ 495: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 2801, Rou_Out[3] = 2801 
+# 505 Out_rand= 1 0 3 2
+# Rou_In[2]= 1073   Rou_Out[0]= 2397
+# Rou_In[3]= 198   Rou_Out[1]= 2771
+# Rou_In[0]= 3823   Rou_Out[2]= 2410
+# Rou_In[1]= 1433   Rou_Out[3]= 7889
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 505: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 505: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 505: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 505: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 505: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: ad3 95d 1ed1 96a
+# 									Rou_Out: e83 115a 3e5 b47
+# UVM_INFO rou_mon.sv(28) @ 505: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 505: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 505: uvm_test_top.env.sb [rou_sb] Rou_In: 4442 3715 2887 997
+# UVM_INFO rou_scoreboard.sv(66) @ 505: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2887, Rou_Out[0] = 2887 
+# UVM_INFO rou_scoreboard.sv(73) @ 505: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 997, Rou_Out[1] = 997 
+# UVM_INFO rou_scoreboard.sv(80) @ 505: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4442, Rou_Out[2] = 4442 
+# UVM_INFO rou_scoreboard.sv(87) @ 505: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 3715, Rou_Out[3] = 3715 
+# 515 Out_rand= 1 0 3 2
+# Rou_In[2]= 3885   Rou_Out[0]= 1073
+# Rou_In[3]= 2826   Rou_Out[1]= 198
+# Rou_In[0]= 3949   Rou_Out[2]= 3823
+# Rou_In[1]= 6793   Rou_Out[3]= 1433
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 515: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 515: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 515: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 515: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 515: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: c6 431 599 eef
+# 									Rou_Out: 1ed1 96a ad3 95d
+# UVM_INFO rou_mon.sv(28) @ 515: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 515: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 515: uvm_test_top.env.sb [rou_sb] Rou_In: 2410 7889 2397 2771
+# UVM_INFO rou_scoreboard.sv(66) @ 515: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2397, Rou_Out[0] = 2397 
+# UVM_INFO rou_scoreboard.sv(73) @ 515: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2771, Rou_Out[1] = 2771 
+# UVM_INFO rou_scoreboard.sv(80) @ 515: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 2410, Rou_Out[2] = 2410 
+# UVM_INFO rou_scoreboard.sv(87) @ 515: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7889, Rou_Out[3] = 7889 
+# 525 Out_rand= 1 0 3 2
+# Rou_In[2]= 9479   Rou_Out[0]= 3885
+# Rou_In[3]= 5920   Rou_Out[1]= 2826
+# Rou_In[0]= 3719   Rou_Out[2]= 3949
+# Rou_In[1]= 7448   Rou_Out[3]= 6793
+#           3
+# UVM_INFO rou_driver.sv(22) @ 525: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 525: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 525: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 525: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 525: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: b0a f2d 1a89 f6d
+# 									Rou_Out: 599 eef c6 431
+# UVM_INFO rou_mon.sv(28) @ 525: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 525: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 525: uvm_test_top.env.sb [rou_sb] Rou_In: 3823 1433 1073 198
+# UVM_INFO rou_scoreboard.sv(66) @ 525: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1073, Rou_Out[0] = 1073 
+# UVM_INFO rou_scoreboard.sv(73) @ 525: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 198, Rou_Out[1] = 198 
+# UVM_INFO rou_scoreboard.sv(80) @ 525: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3823, Rou_Out[2] = 3823 
+# UVM_INFO rou_scoreboard.sv(87) @ 525: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 1433, Rou_Out[3] = 1433 
+# 535 Out_rand= 1 0 3 2
+# Rou_In[2]= 7595   Rou_Out[0]= 9479
+# Rou_In[3]= 7803   Rou_Out[1]= 5920
+# Rou_In[0]= 9936   Rou_Out[2]= 3719
+# Rou_In[1]= 6218   Rou_Out[3]= 7448
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 535: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 535: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 535: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 535: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 535: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1720 2507 1d18 e87
+# 									Rou_Out: 1a89 f6d b0a f2d
+# UVM_INFO rou_mon.sv(28) @ 535: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 535: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 535: uvm_test_top.env.sb [rou_sb] Rou_In: 3949 6793 3885 2826
+# UVM_INFO rou_scoreboard.sv(66) @ 535: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 3885, Rou_Out[0] = 3885 
+# UVM_INFO rou_scoreboard.sv(73) @ 535: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2826, Rou_Out[1] = 2826 
+# UVM_INFO rou_scoreboard.sv(80) @ 535: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3949, Rou_Out[2] = 3949 
+# UVM_INFO rou_scoreboard.sv(87) @ 535: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6793, Rou_Out[3] = 6793 
+# 545 Out_rand= 1 0 3 2
+# Rou_In[2]= 4124   Rou_Out[0]= 7595
+# Rou_In[3]= 3869   Rou_Out[1]= 7803
+# Rou_In[0]= 4255   Rou_Out[2]= 9936
+# Rou_In[1]= 5141   Rou_Out[3]= 6218
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 545: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 545: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 545: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 545: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 545: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1e7b 1dab 184a 26d0
+# 									Rou_Out: 1d18 e87 1720 2507
+# UVM_INFO rou_mon.sv(28) @ 545: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 545: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 545: uvm_test_top.env.sb [rou_sb] Rou_In: 3719 7448 9479 5920
+# UVM_INFO rou_scoreboard.sv(66) @ 545: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9479, Rou_Out[0] = 9479 
+# UVM_INFO rou_scoreboard.sv(73) @ 545: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5920, Rou_Out[1] = 5920 
+# UVM_INFO rou_scoreboard.sv(80) @ 545: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3719, Rou_Out[2] = 3719 
+# UVM_INFO rou_scoreboard.sv(87) @ 545: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7448, Rou_Out[3] = 7448 
+# 555 Out_rand= 1 0 3 2
+# Rou_In[2]= 5088   Rou_Out[0]= 4124
+# Rou_In[3]= 229   Rou_Out[1]= 3869
+# Rou_In[0]= 1374   Rou_Out[2]= 4255
+# Rou_In[1]= 1781   Rou_Out[3]= 5141
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 555: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 555: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 555: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 555: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 555: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: f1d 101c 1415 109f
+# 									Rou_Out: 184a 26d0 1e7b 1dab
+# UVM_INFO rou_mon.sv(28) @ 555: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 555: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 555: uvm_test_top.env.sb [rou_sb] Rou_In: 9936 6218 7595 7803
+# UVM_INFO rou_scoreboard.sv(66) @ 555: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 7595, Rou_Out[0] = 7595 
+# UVM_INFO rou_scoreboard.sv(73) @ 555: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7803, Rou_Out[1] = 7803 
+# UVM_INFO rou_scoreboard.sv(80) @ 555: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 9936, Rou_Out[2] = 9936 
+# UVM_INFO rou_scoreboard.sv(87) @ 555: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6218, Rou_Out[3] = 6218 
+# 565 Out_rand= 1 0 3 2
+# Rou_In[2]= 4191   Rou_Out[0]= 5088
+# Rou_In[3]= 9272   Rou_Out[1]= 229
+# Rou_In[0]= 8089   Rou_Out[2]= 1374
+# Rou_In[1]= 5075   Rou_Out[3]= 1781
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 565: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 565: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 565: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 565: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 565: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: e5 13e0 6f5 55e
+# 									Rou_Out: 1415 109f f1d 101c
+# UVM_INFO rou_mon.sv(28) @ 565: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 565: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 565: uvm_test_top.env.sb [rou_sb] Rou_In: 4255 5141 4124 3869
+# UVM_INFO rou_scoreboard.sv(66) @ 565: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4124, Rou_Out[0] = 4124 
+# UVM_INFO rou_scoreboard.sv(73) @ 565: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3869, Rou_Out[1] = 3869 
+# UVM_INFO rou_scoreboard.sv(80) @ 565: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4255, Rou_Out[2] = 4255 
+# UVM_INFO rou_scoreboard.sv(87) @ 565: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5141, Rou_Out[3] = 5141 
+# 575 Out_rand= 1 0 3 2
+# Rou_In[2]= 5081   Rou_Out[0]= 4191
+# Rou_In[3]= 9734   Rou_Out[1]= 9272
+# Rou_In[0]= 7445   Rou_Out[2]= 8089
+# Rou_In[1]= 6447   Rou_Out[3]= 5075
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 575: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 575: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 575: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 575: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 575: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2438 105f 13d3 1f99
+# 									Rou_Out: 6f5 55e e5 13e0
+# UVM_INFO rou_mon.sv(28) @ 575: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 575: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 575: uvm_test_top.env.sb [rou_sb] Rou_In: 1374 1781 5088 229
+# UVM_INFO rou_scoreboard.sv(66) @ 575: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5088, Rou_Out[0] = 5088 
+# UVM_INFO rou_scoreboard.sv(73) @ 575: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 229, Rou_Out[1] = 229 
+# UVM_INFO rou_scoreboard.sv(80) @ 575: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 1374, Rou_Out[2] = 1374 
+# UVM_INFO rou_scoreboard.sv(87) @ 575: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 1781, Rou_Out[3] = 1781 
+# 585 Out_rand= 1 0 3 2
+# Rou_In[2]= 9043   Rou_Out[0]= 5081
+# Rou_In[3]= 9679   Rou_Out[1]= 9734
+# Rou_In[0]= 168   Rou_Out[2]= 7445
+# Rou_In[1]= 6396   Rou_Out[3]= 6447
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 585: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 585: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 585: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 585: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 585: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2606 13d9 192f 1d15
+# 									Rou_Out: 13d3 1f99 2438 105f
+# UVM_INFO rou_mon.sv(28) @ 585: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 585: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 585: uvm_test_top.env.sb [rou_sb] Rou_In: 8089 5075 4191 9272
+# UVM_INFO rou_scoreboard.sv(66) @ 585: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4191, Rou_Out[0] = 4191 
+# UVM_INFO rou_scoreboard.sv(73) @ 585: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9272, Rou_Out[1] = 9272 
+# UVM_INFO rou_scoreboard.sv(80) @ 585: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8089, Rou_Out[2] = 8089 
+# UVM_INFO rou_scoreboard.sv(87) @ 585: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5075, Rou_Out[3] = 5075 
+# 595 Out_rand= 1 0 3 2
+# Rou_In[2]= 2831   Rou_Out[0]= 9043
+# Rou_In[3]= 4756   Rou_Out[1]= 9679
+# Rou_In[0]= 1183   Rou_Out[2]= 168
+# Rou_In[1]= 652   Rou_Out[3]= 6396
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 595: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 595: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 595: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 595: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 595: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 25cf 2353 18fc a8
+# 									Rou_Out: 192f 1d15 2606 13d9
+# UVM_INFO rou_mon.sv(28) @ 595: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 595: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 595: uvm_test_top.env.sb [rou_sb] Rou_In: 7445 6447 5081 9734
+# UVM_INFO rou_scoreboard.sv(66) @ 595: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5081, Rou_Out[0] = 5081 
+# UVM_INFO rou_scoreboard.sv(73) @ 595: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9734, Rou_Out[1] = 9734 
+# UVM_INFO rou_scoreboard.sv(80) @ 595: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7445, Rou_Out[2] = 7445 
+# UVM_INFO rou_scoreboard.sv(87) @ 595: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6447, Rou_Out[3] = 6447 
+# 605 Out_rand= 1 0 3 2
+# Rou_In[2]= 1527   Rou_Out[0]= 2831
+# Rou_In[3]= 6364   Rou_Out[1]= 4756
+# Rou_In[0]= 6170   Rou_Out[2]= 1183
+# Rou_In[1]= 1298   Rou_Out[3]= 652
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 605: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 605: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 605: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 605: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 605: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1294 b0f 28c 49f
+# 									Rou_Out: 18fc a8 25cf 2353
+# UVM_INFO rou_mon.sv(28) @ 605: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 605: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 605: uvm_test_top.env.sb [rou_sb] Rou_In: 168 6396 9043 9679
+# UVM_INFO rou_scoreboard.sv(66) @ 605: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9043, Rou_Out[0] = 9043 
+# UVM_INFO rou_scoreboard.sv(73) @ 605: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9679, Rou_Out[1] = 9679 
+# UVM_INFO rou_scoreboard.sv(80) @ 605: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 168, Rou_Out[2] = 168 
+# UVM_INFO rou_scoreboard.sv(87) @ 605: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6396, Rou_Out[3] = 6396 
+# 615 Out_rand= 1 0 3 2
+# Rou_In[2]= 5862   Rou_Out[0]= 1527
+# Rou_In[3]= 1258   Rou_Out[1]= 6364
+# Rou_In[0]= 6583   Rou_Out[2]= 6170
+# Rou_In[1]= 4075   Rou_Out[3]= 1298
+# Ola! Out_rand= 1 0 3 2
+# UVM_INFO rou_driver.sv(22) @ 615: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 615: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 615: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 615: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 615: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 18dc 5f7 512 181a
+# 									Rou_Out: 28c 49f 1294 b0f
+# UVM_INFO rou_mon.sv(28) @ 615: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 615: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 615: uvm_test_top.env.sb [rou_sb] Rou_In: 1183 652 2831 4756
+# UVM_INFO rou_scoreboard.sv(66) @ 615: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2831, Rou_Out[0] = 2831 
+# UVM_INFO rou_scoreboard.sv(73) @ 615: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 4756, Rou_Out[1] = 4756 
+# UVM_INFO rou_scoreboard.sv(80) @ 615: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 1183, Rou_Out[2] = 1183 
+# UVM_INFO rou_scoreboard.sv(87) @ 615: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 652, Rou_Out[3] = 652 
+# 625 Out_rand= 1 0 3 2
+# Rou_In[2]= 2741   Rou_Out[0]= 5862
+# Rou_In[3]= 8691   Rou_Out[1]= 1258
+# Rou_In[0]= 6073   Rou_Out[2]= 6583
+# Rou_In[1]= 6066   Rou_Out[3]= 4075
+#           1
+# UVM_INFO rou_driver.sv(22) @ 625: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 625: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 625: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 625: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 625: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 4ea 16e6 feb 19b7
+# 									Rou_Out: 512 181a 18dc 5f7
+# UVM_INFO rou_mon.sv(28) @ 625: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 625: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 625: uvm_test_top.env.sb [rou_sb] Rou_In: 6170 1298 1527 6364
+# UVM_INFO rou_scoreboard.sv(66) @ 625: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1527, Rou_Out[0] = 1527 
+# UVM_INFO rou_scoreboard.sv(73) @ 625: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 6364, Rou_Out[1] = 6364 
+# UVM_INFO rou_scoreboard.sv(80) @ 625: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 6170, Rou_Out[2] = 6170 
+# UVM_INFO rou_scoreboard.sv(87) @ 625: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 1298, Rou_Out[3] = 1298 
+# 635 Out_rand= 2 1 3 0
+# Rou_In[0]= 8069   Rou_Out[0]= 2741
+# Rou_In[3]= 5714   Rou_Out[1]= 8691
+# Rou_In[1]= 5390   Rou_Out[2]= 6073
+# Rou_In[2]= 5438   Rou_Out[3]= 6066
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 635: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 635: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 635: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 635: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 635: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 21f3 ab5 17b2 17b9
+# 									Rou_Out: feb 19b7 4ea 16e6
+# UVM_INFO rou_mon.sv(28) @ 635: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 635: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 635: uvm_test_top.env.sb [rou_sb] Rou_In: 6583 4075 5862 1258
+# UVM_ERROR rou_scoreboard.sv(69) @ 635: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 6583, Rou_Out[0] = 5862   
+# UVM_INFO rou_scoreboard.sv(73) @ 635: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1258, Rou_Out[1] = 1258 
+# UVM_ERROR rou_scoreboard.sv(83) @ 635: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 4075, Rou_Out[2] = 6583   
+# UVM_ERROR rou_scoreboard.sv(90) @ 635: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 5862, Rou_Out[3] = 4075   
+# 645 Out_rand= 2 1 3 0
+# Rou_In[0]= 8000   Rou_Out[0]= 8069
+# Rou_In[3]= 5656   Rou_Out[1]= 5714
+# Rou_In[1]= 8841   Rou_Out[2]= 5390
+# Rou_In[2]= 8845   Rou_Out[3]= 5438
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 645: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 645: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 645: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 645: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 645: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1652 153e 150e 1f85
+# 									Rou_Out: 17b2 17b9 21f3 ab5
+# UVM_INFO rou_mon.sv(28) @ 645: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 645: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 645: uvm_test_top.env.sb [rou_sb] Rou_In: 6073 6066 2741 8691
+# UVM_ERROR rou_scoreboard.sv(69) @ 645: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 6073, Rou_Out[0] = 2741   
+# UVM_INFO rou_scoreboard.sv(73) @ 645: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8691, Rou_Out[1] = 8691 
+# UVM_ERROR rou_scoreboard.sv(83) @ 645: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 6066, Rou_Out[2] = 6073   
+# UVM_ERROR rou_scoreboard.sv(90) @ 645: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 2741, Rou_Out[3] = 6066   
+# 655 Out_rand= 2 1 3 0
+# Rou_In[0]= 9372   Rou_Out[0]= 8000
+# Rou_In[3]= 3626   Rou_Out[1]= 5656
+# Rou_In[1]= 8416   Rou_Out[2]= 8841
+# Rou_In[2]= 386   Rou_Out[3]= 8845
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 655: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 655: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 655: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 655: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 655: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1618 228d 2289 1f40
+# 									Rou_Out: 153e 150e 1652 1f85
+# UVM_INFO rou_mon.sv(28) @ 655: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 655: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 655: uvm_test_top.env.sb [rou_sb] Rou_In: 8069 5390 5438 5714
+# UVM_INFO rou_scoreboard.sv(66) @ 655: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8069, Rou_Out[0] = 8069 
+# UVM_INFO rou_scoreboard.sv(73) @ 655: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5714, Rou_Out[1] = 5714 
+# UVM_INFO rou_scoreboard.sv(80) @ 655: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5390, Rou_Out[2] = 5390 
+# UVM_INFO rou_scoreboard.sv(87) @ 655: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5438, Rou_Out[3] = 5438 
+# 665 Out_rand= 2 1 3 0
+# Rou_In[0]= 5656   Rou_Out[0]= 9372
+# Rou_In[3]= 8264   Rou_Out[1]= 3626
+# Rou_In[1]= 9704   Rou_Out[2]= 8416
+# Rou_In[2]= 143   Rou_Out[3]= 386
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 665: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 665: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 665: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 665: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 665: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: e2a 182 20e0 249c
+# 									Rou_Out: 228d 2289 1618 1f40
+# UVM_INFO rou_mon.sv(28) @ 665: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 665: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 665: uvm_test_top.env.sb [rou_sb] Rou_In: 8000 8841 8845 5656
+# UVM_INFO rou_scoreboard.sv(66) @ 665: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8000, Rou_Out[0] = 8000 
+# UVM_INFO rou_scoreboard.sv(73) @ 665: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5656, Rou_Out[1] = 5656 
+# UVM_INFO rou_scoreboard.sv(80) @ 665: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8841, Rou_Out[2] = 8841 
+# UVM_INFO rou_scoreboard.sv(87) @ 665: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 8845, Rou_Out[3] = 8845 
+# 675 Out_rand= 2 1 3 0
+# Rou_In[0]= 714   Rou_Out[0]= 5656
+# Rou_In[3]= 3596   Rou_Out[1]= 8264
+# Rou_In[1]= 5453   Rou_Out[2]= 9704
+# Rou_In[2]= 1271   Rou_Out[3]= 143
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 675: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 675: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 675: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 675: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 675: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2048 8f 25e8 1618
+# 									Rou_Out: 182 20e0 e2a 249c
+# UVM_INFO rou_mon.sv(28) @ 675: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 675: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 675: uvm_test_top.env.sb [rou_sb] Rou_In: 9372 8416 386 3626
+# UVM_INFO rou_scoreboard.sv(66) @ 675: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 9372, Rou_Out[0] = 9372 
+# UVM_INFO rou_scoreboard.sv(73) @ 675: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3626, Rou_Out[1] = 3626 
+# UVM_INFO rou_scoreboard.sv(80) @ 675: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8416, Rou_Out[2] = 8416 
+# UVM_INFO rou_scoreboard.sv(87) @ 675: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 386, Rou_Out[3] = 386 
+# 685 Out_rand= 2 1 3 0
+# Rou_In[0]= 861   Rou_Out[0]= 714
+# Rou_In[3]= 2490   Rou_Out[1]= 3596
+# Rou_In[1]= 1441   Rou_Out[2]= 5453
+# Rou_In[2]= 2039   Rou_Out[3]= 1271
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 685: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 685: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 685: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 685: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 685: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: e0c 4f7 154d 2ca
+# 									Rou_Out: 8f 25e8 2048 1618
+# UVM_INFO rou_mon.sv(28) @ 685: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 685: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 685: uvm_test_top.env.sb [rou_sb] Rou_In: 5656 9704 143 8264
+# UVM_INFO rou_scoreboard.sv(66) @ 685: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5656, Rou_Out[0] = 5656 
+# UVM_INFO rou_scoreboard.sv(73) @ 685: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8264, Rou_Out[1] = 8264 
+# UVM_INFO rou_scoreboard.sv(80) @ 685: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9704, Rou_Out[2] = 9704 
+# UVM_INFO rou_scoreboard.sv(87) @ 685: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 143, Rou_Out[3] = 143 
+# 695 Out_rand= 2 1 3 0
+# Rou_In[0]= 5523   Rou_Out[0]= 861
+# Rou_In[3]= 8388   Rou_Out[1]= 2490
+# Rou_In[1]= 8728   Rou_Out[2]= 1441
+# Rou_In[2]= 9856   Rou_Out[3]= 2039
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 695: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 695: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 695: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 695: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 695: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 9ba 7f7 5a1 35d
+# 									Rou_Out: 4f7 154d e0c 2ca
+# UVM_INFO rou_mon.sv(28) @ 695: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 695: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 695: uvm_test_top.env.sb [rou_sb] Rou_In: 714 5453 1271 3596
+# UVM_INFO rou_scoreboard.sv(66) @ 695: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 714, Rou_Out[0] = 714 
+# UVM_INFO rou_scoreboard.sv(73) @ 695: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3596, Rou_Out[1] = 3596 
+# UVM_INFO rou_scoreboard.sv(80) @ 695: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5453, Rou_Out[2] = 5453 
+# UVM_INFO rou_scoreboard.sv(87) @ 695: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1271, Rou_Out[3] = 1271 
+# 705 Out_rand= 2 1 3 0
+# Rou_In[0]= 154   Rou_Out[0]= 5523
+# Rou_In[3]= 9360   Rou_Out[1]= 8388
+# Rou_In[1]= 9062   Rou_Out[2]= 8728
+# Rou_In[2]= 980   Rou_Out[3]= 9856
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 705: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 705: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 705: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 705: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 705: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 20c4 2680 2218 1593
+# 									Rou_Out: 7f7 5a1 9ba 35d
+# UVM_INFO rou_mon.sv(28) @ 705: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 705: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 705: uvm_test_top.env.sb [rou_sb] Rou_In: 861 1441 2039 2490
+# UVM_INFO rou_scoreboard.sv(66) @ 705: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 861, Rou_Out[0] = 861 
+# UVM_INFO rou_scoreboard.sv(73) @ 705: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2490, Rou_Out[1] = 2490 
+# UVM_INFO rou_scoreboard.sv(80) @ 705: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 1441, Rou_Out[2] = 1441 
+# UVM_INFO rou_scoreboard.sv(87) @ 705: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2039, Rou_Out[3] = 2039 
+# 715 Out_rand= 2 1 3 0
+# Rou_In[0]= 2401   Rou_Out[0]= 154
+# Rou_In[3]= 8730   Rou_Out[1]= 9360
+# Rou_In[1]= 8912   Rou_Out[2]= 9062
+# Rou_In[2]= 6221   Rou_Out[3]= 980
+# Ola! Out_rand= 2 1 3 0
+# UVM_INFO rou_driver.sv(22) @ 715: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 715: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 715: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 715: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 715: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2490 3d4 2366 9a
+# 									Rou_Out: 2680 2218 20c4 1593
+# UVM_INFO rou_mon.sv(28) @ 715: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 715: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 715: uvm_test_top.env.sb [rou_sb] Rou_In: 5523 8728 9856 8388
+# UVM_INFO rou_scoreboard.sv(66) @ 715: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5523, Rou_Out[0] = 5523 
+# UVM_INFO rou_scoreboard.sv(73) @ 715: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8388, Rou_Out[1] = 8388 
+# UVM_INFO rou_scoreboard.sv(80) @ 715: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8728, Rou_Out[2] = 8728 
+# UVM_INFO rou_scoreboard.sv(87) @ 715: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9856, Rou_Out[3] = 9856 
+# 725 Out_rand= 2 1 3 0
+# Rou_In[0]= 3698   Rou_Out[0]= 2401
+# Rou_In[3]= 7403   Rou_Out[1]= 8730
+# Rou_In[1]= 4381   Rou_Out[2]= 8912
+# Rou_In[2]= 210   Rou_Out[3]= 6221
+#           1
+# UVM_INFO rou_driver.sv(22) @ 725: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 725: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 725: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 725: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 725: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 221a 184d 22d0 961
+# 									Rou_Out: 3d4 2366 2490 9a
+# UVM_INFO rou_mon.sv(28) @ 725: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 725: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 725: uvm_test_top.env.sb [rou_sb] Rou_In: 154 9062 980 9360
+# UVM_INFO rou_scoreboard.sv(66) @ 725: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 154, Rou_Out[0] = 154 
+# UVM_INFO rou_scoreboard.sv(73) @ 725: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9360, Rou_Out[1] = 9360 
+# UVM_INFO rou_scoreboard.sv(80) @ 725: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9062, Rou_Out[2] = 9062 
+# UVM_INFO rou_scoreboard.sv(87) @ 725: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 980, Rou_Out[3] = 980 
+# 735 Out_rand= 1 2 3 0
+# Rou_In[0]= 9419   Rou_Out[0]= 3698
+# Rou_In[3]= 3775   Rou_Out[1]= 7403
+# Rou_In[2]= 3665   Rou_Out[2]= 4381
+# Rou_In[1]= 6036   Rou_Out[3]= 210
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 735: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 735: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 735: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 735: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 735: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1ceb d2 111d e72
+# 									Rou_Out: 184d 22d0 221a 961
+# UVM_INFO rou_mon.sv(28) @ 735: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 735: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 735: uvm_test_top.env.sb [rou_sb] Rou_In: 2401 8912 6221 8730
+# UVM_INFO rou_scoreboard.sv(66) @ 735: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 2401, Rou_Out[0] = 2401 
+# UVM_INFO rou_scoreboard.sv(73) @ 735: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8730, Rou_Out[1] = 8730 
+# UVM_ERROR rou_scoreboard.sv(83) @ 735: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 6221, Rou_Out[2] = 8912   
+# UVM_ERROR rou_scoreboard.sv(90) @ 735: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 8912, Rou_Out[3] = 6221   
+# 745 Out_rand= 1 2 3 0
+# Rou_In[0]= 5281   Rou_Out[0]= 9419
+# Rou_In[3]= 7480   Rou_Out[1]= 3775
+# Rou_In[2]= 1250   Rou_Out[2]= 3665
+# Rou_In[1]= 6153   Rou_Out[3]= 6036
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 745: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 745: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 745: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 745: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 745: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: ebf e51 1794 24cb
+# 									Rou_Out: d2 111d 1ceb e72
+# UVM_INFO rou_mon.sv(28) @ 745: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 745: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 745: uvm_test_top.env.sb [rou_sb] Rou_In: 3698 4381 210 7403
+# UVM_INFO rou_scoreboard.sv(66) @ 745: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3698, Rou_Out[0] = 3698 
+# UVM_INFO rou_scoreboard.sv(73) @ 745: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7403, Rou_Out[1] = 7403 
+# UVM_ERROR rou_scoreboard.sv(83) @ 745: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 210, Rou_Out[2] = 4381   
+# UVM_ERROR rou_scoreboard.sv(90) @ 745: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 4381, Rou_Out[3] = 210   
+# 755 Out_rand= 1 2 3 0
+# Rou_In[0]= 3351   Rou_Out[0]= 5281
+# Rou_In[3]= 7248   Rou_Out[1]= 7480
+# Rou_In[2]= 5582   Rou_Out[2]= 1250
+# Rou_In[1]= 3184   Rou_Out[3]= 6153
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 755: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 755: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 755: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 755: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 755: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1d38 4e2 1809 14a1
+# 									Rou_Out: 1794 e51 ebf 24cb
+# UVM_INFO rou_mon.sv(28) @ 755: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 755: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 755: uvm_test_top.env.sb [rou_sb] Rou_In: 9419 6036 3665 3775
+# UVM_INFO rou_scoreboard.sv(66) @ 755: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 9419, Rou_Out[0] = 9419 
+# UVM_INFO rou_scoreboard.sv(73) @ 755: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3775, Rou_Out[1] = 3775 
+# UVM_INFO rou_scoreboard.sv(80) @ 755: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 3665, Rou_Out[2] = 3665 
+# UVM_INFO rou_scoreboard.sv(87) @ 755: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6036, Rou_Out[3] = 6036 
+# 765 Out_rand= 1 2 3 0
+# Rou_In[0]= 3462   Rou_Out[0]= 3351
+# Rou_In[3]= 3034   Rou_Out[1]= 7248
+# Rou_In[2]= 1096   Rou_Out[2]= 5582
+# Rou_In[1]= 6306   Rou_Out[3]= 3184
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 765: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 765: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 765: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 765: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 765: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1c50 15ce c70 d17
+# 									Rou_Out: 1809 4e2 1d38 14a1
+# UVM_INFO rou_mon.sv(28) @ 765: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 765: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 765: uvm_test_top.env.sb [rou_sb] Rou_In: 5281 6153 1250 7480
+# UVM_INFO rou_scoreboard.sv(66) @ 765: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5281, Rou_Out[0] = 5281 
+# UVM_INFO rou_scoreboard.sv(73) @ 765: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7480, Rou_Out[1] = 7480 
+# UVM_INFO rou_scoreboard.sv(80) @ 765: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1250, Rou_Out[2] = 1250 
+# UVM_INFO rou_scoreboard.sv(87) @ 765: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6153, Rou_Out[3] = 6153 
+# 775 Out_rand= 1 2 3 0
+# Rou_In[0]= 517   Rou_Out[0]= 3462
+# Rou_In[3]= 1051   Rou_Out[1]= 3034
+# Rou_In[2]= 7402   Rou_Out[2]= 1096
+# Rou_In[1]= 9506   Rou_Out[3]= 6306
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 775: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 775: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 775: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 775: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 775: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: bda 448 18a2 d86
+# 									Rou_Out: c70 15ce 1c50 d17
+# UVM_INFO rou_mon.sv(28) @ 775: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 775: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 775: uvm_test_top.env.sb [rou_sb] Rou_In: 3351 3184 5582 7248
+# UVM_INFO rou_scoreboard.sv(66) @ 775: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3351, Rou_Out[0] = 3351 
+# UVM_INFO rou_scoreboard.sv(73) @ 775: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7248, Rou_Out[1] = 7248 
+# UVM_INFO rou_scoreboard.sv(80) @ 775: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5582, Rou_Out[2] = 5582 
+# UVM_INFO rou_scoreboard.sv(87) @ 775: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 3184, Rou_Out[3] = 3184 
+# 785 Out_rand= 1 2 3 0
+# Rou_In[0]= 5861   Rou_Out[0]= 517
+# Rou_In[3]= 259   Rou_Out[1]= 1051
+# Rou_In[2]= 2380   Rou_Out[2]= 7402
+# Rou_In[1]= 1158   Rou_Out[3]= 9506
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 785: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 785: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 785: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 785: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 785: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 41b 1cea 2522 205
+# 									Rou_Out: 18a2 448 bda d86
+# UVM_INFO rou_mon.sv(28) @ 785: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 785: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 785: uvm_test_top.env.sb [rou_sb] Rou_In: 3462 6306 1096 3034
+# UVM_INFO rou_scoreboard.sv(66) @ 785: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 3462, Rou_Out[0] = 3462 
+# UVM_INFO rou_scoreboard.sv(73) @ 785: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3034, Rou_Out[1] = 3034 
+# UVM_INFO rou_scoreboard.sv(80) @ 785: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1096, Rou_Out[2] = 1096 
+# UVM_INFO rou_scoreboard.sv(87) @ 785: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6306, Rou_Out[3] = 6306 
+# 795 Out_rand= 1 2 3 0
+# Rou_In[0]= 2475   Rou_Out[0]= 5861
+# Rou_In[3]= 6415   Rou_Out[1]= 259
+# Rou_In[2]= 2326   Rou_Out[2]= 2380
+# Rou_In[1]= 3943   Rou_Out[3]= 1158
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 795: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 795: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 795: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 795: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 795: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 103 94c 486 16e5
+# 									Rou_Out: 2522 1cea 41b 205
+# UVM_INFO rou_mon.sv(28) @ 795: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 795: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 795: uvm_test_top.env.sb [rou_sb] Rou_In: 517 9506 7402 1051
+# UVM_INFO rou_scoreboard.sv(66) @ 795: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 517, Rou_Out[0] = 517 
+# UVM_INFO rou_scoreboard.sv(73) @ 795: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1051, Rou_Out[1] = 1051 
+# UVM_INFO rou_scoreboard.sv(80) @ 795: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 7402, Rou_Out[2] = 7402 
+# UVM_INFO rou_scoreboard.sv(87) @ 795: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9506, Rou_Out[3] = 9506 
+# 805 Out_rand= 1 2 3 0
+# Rou_In[0]= 7334   Rou_Out[0]= 2475
+# Rou_In[3]= 5317   Rou_Out[1]= 6415
+# Rou_In[2]= 8519   Rou_Out[2]= 2326
+# Rou_In[1]= 8298   Rou_Out[3]= 3943
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 805: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 805: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 805: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 805: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 805: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 190f 916 f67 9ab
+# 									Rou_Out: 486 94c 103 16e5
+# UVM_INFO rou_mon.sv(28) @ 805: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 805: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 805: uvm_test_top.env.sb [rou_sb] Rou_In: 5861 1158 2380 259
+# UVM_INFO rou_scoreboard.sv(66) @ 805: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5861, Rou_Out[0] = 5861 
+# UVM_INFO rou_scoreboard.sv(73) @ 805: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 259, Rou_Out[1] = 259 
+# UVM_INFO rou_scoreboard.sv(80) @ 805: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2380, Rou_Out[2] = 2380 
+# UVM_INFO rou_scoreboard.sv(87) @ 805: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 1158, Rou_Out[3] = 1158 
+# 815 Out_rand= 1 2 3 0
+# Rou_In[0]= 4426   Rou_Out[0]= 7334
+# Rou_In[3]= 8801   Rou_Out[1]= 5317
+# Rou_In[2]= 2618   Rou_Out[2]= 8519
+# Rou_In[1]= 5064   Rou_Out[3]= 8298
+# Ola! Out_rand= 1 2 3 0
+# UVM_INFO rou_driver.sv(22) @ 815: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 815: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 815: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 815: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 815: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 14c5 2147 206a 1ca6
+# 									Rou_Out: f67 916 190f 9ab
+# UVM_INFO rou_mon.sv(28) @ 815: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 815: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 815: uvm_test_top.env.sb [rou_sb] Rou_In: 2475 3943 2326 6415
+# UVM_INFO rou_scoreboard.sv(66) @ 815: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 2475, Rou_Out[0] = 2475 
+# UVM_INFO rou_scoreboard.sv(73) @ 815: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 6415, Rou_Out[1] = 6415 
+# UVM_INFO rou_scoreboard.sv(80) @ 815: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2326, Rou_Out[2] = 2326 
+# UVM_INFO rou_scoreboard.sv(87) @ 815: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 3943, Rou_Out[3] = 3943 
+# 825 Out_rand= 1 2 3 0
+# Rou_In[0]= 1920   Rou_Out[0]= 4426
+# Rou_In[3]= 1514   Rou_Out[1]= 8801
+# Rou_In[2]= 425   Rou_Out[2]= 2618
+# Rou_In[1]= 8928   Rou_Out[3]= 5064
+#           4
+# UVM_INFO rou_driver.sv(22) @ 825: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 825: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 825: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 825: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 825: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2261 a3a 13c8 114a
+# 									Rou_Out: 206a 2147 14c5 1ca6
+# UVM_INFO rou_mon.sv(28) @ 825: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 825: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 825: uvm_test_top.env.sb [rou_sb] Rou_In: 7334 8298 8519 5317
+# UVM_INFO rou_scoreboard.sv(66) @ 825: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7334, Rou_Out[0] = 7334 
+# UVM_INFO rou_scoreboard.sv(73) @ 825: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5317, Rou_Out[1] = 5317 
+# UVM_INFO rou_scoreboard.sv(80) @ 825: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 8519, Rou_Out[2] = 8519 
+# UVM_INFO rou_scoreboard.sv(87) @ 825: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8298, Rou_Out[3] = 8298 
+# 835 Out_rand= 1 0 2 3
+# Rou_In[3]= 7205   Rou_Out[0]= 1920
+# Rou_In[2]= 1112   Rou_Out[1]= 1514
+# Rou_In[0]= 8838   Rou_Out[2]= 425
+# Rou_In[1]= 9989   Rou_Out[3]= 8928
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 835: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 835: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 835: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 835: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 835: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 5ea 1a9 22e0 780
+# 									Rou_Out: 13c8 a3a 2261 114a
+# UVM_INFO rou_mon.sv(28) @ 835: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 835: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 835: uvm_test_top.env.sb [rou_sb] Rou_In: 4426 5064 2618 8801
+# UVM_ERROR rou_scoreboard.sv(69) @ 835: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 8801, Rou_Out[0] = 4426   
+# UVM_ERROR rou_scoreboard.sv(76) @ 835: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 2618, Rou_Out[1] = 8801   
+# UVM_ERROR rou_scoreboard.sv(83) @ 835: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 4426, Rou_Out[2] = 2618   
+# UVM_INFO rou_scoreboard.sv(87) @ 835: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5064, Rou_Out[3] = 5064 
+# 845 Out_rand= 1 0 2 3
+# Rou_In[3]= 8224   Rou_Out[0]= 7205
+# Rou_In[2]= 8724   Rou_Out[1]= 1112
+# Rou_In[0]= 5028   Rou_Out[2]= 8838
+# Rou_In[1]= 6612   Rou_Out[3]= 9989
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 845: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 845: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 845: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 845: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 845: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1c25 458 2705 2286
+# 									Rou_Out: 22e0 1a9 5ea 780
+# UVM_INFO rou_mon.sv(28) @ 845: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 845: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 845: uvm_test_top.env.sb [rou_sb] Rou_In: 1920 8928 425 1514
+# UVM_ERROR rou_scoreboard.sv(69) @ 845: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 1514, Rou_Out[0] = 1920   
+# UVM_ERROR rou_scoreboard.sv(76) @ 845: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 425, Rou_Out[1] = 1514   
+# UVM_ERROR rou_scoreboard.sv(83) @ 845: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 1920, Rou_Out[2] = 425   
+# UVM_INFO rou_scoreboard.sv(87) @ 845: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8928, Rou_Out[3] = 8928 
+# 855 Out_rand= 1 0 2 3
+# Rou_In[3]= 1417   Rou_Out[0]= 8224
+# Rou_In[2]= 2178   Rou_Out[1]= 8724
+# Rou_In[0]= 7096   Rou_Out[2]= 5028
+# Rou_In[1]= 1416   Rou_Out[3]= 6612
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 855: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 855: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 855: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 855: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 855: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2020 2214 19d4 13a4
+# 									Rou_Out: 2705 2286 458 1c25
+# UVM_INFO rou_mon.sv(28) @ 855: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 855: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 855: uvm_test_top.env.sb [rou_sb] Rou_In: 8838 9989 1112 7205
+# UVM_INFO rou_scoreboard.sv(66) @ 855: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 7205, Rou_Out[0] = 7205 
+# UVM_INFO rou_scoreboard.sv(73) @ 855: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1112, Rou_Out[1] = 1112 
+# UVM_INFO rou_scoreboard.sv(80) @ 855: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8838, Rou_Out[2] = 8838 
+# UVM_INFO rou_scoreboard.sv(87) @ 855: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9989, Rou_Out[3] = 9989 
+# 865 Out_rand= 1 0 2 3
+# Rou_In[3]= 4558   Rou_Out[0]= 1417
+# Rou_In[2]= 1768   Rou_Out[1]= 2178
+# Rou_In[0]= 330   Rou_Out[2]= 7096
+# Rou_In[1]= 9807   Rou_Out[3]= 1416
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 865: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 865: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 865: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 865: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 865: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 589 882 588 1bb8
+# 									Rou_Out: 19d4 13a4 2214 2020
+# UVM_INFO rou_mon.sv(28) @ 865: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 865: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 865: uvm_test_top.env.sb [rou_sb] Rou_In: 5028 6612 8724 8224
+# UVM_INFO rou_scoreboard.sv(66) @ 865: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 8224, Rou_Out[0] = 8224 
+# UVM_INFO rou_scoreboard.sv(73) @ 865: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 8724, Rou_Out[1] = 8724 
+# UVM_INFO rou_scoreboard.sv(80) @ 865: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5028, Rou_Out[2] = 5028 
+# UVM_INFO rou_scoreboard.sv(87) @ 865: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6612, Rou_Out[3] = 6612 
+# 875 Out_rand= 1 0 2 3
+# Rou_In[3]= 1568   Rou_Out[0]= 4558
+# Rou_In[2]= 9701   Rou_Out[1]= 1768
+# Rou_In[0]= 6613   Rou_Out[2]= 330
+# Rou_In[1]= 5143   Rou_Out[3]= 9807
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 875: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 875: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 875: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 875: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 875: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 11ce 6e8 264f 14a
+# 									Rou_Out: 588 1bb8 882 589
+# UVM_INFO rou_mon.sv(28) @ 875: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 875: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 875: uvm_test_top.env.sb [rou_sb] Rou_In: 7096 1416 2178 1417
+# UVM_INFO rou_scoreboard.sv(66) @ 875: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1417, Rou_Out[0] = 1417 
+# UVM_INFO rou_scoreboard.sv(73) @ 875: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 2178, Rou_Out[1] = 2178 
+# UVM_INFO rou_scoreboard.sv(80) @ 875: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7096, Rou_Out[2] = 7096 
+# UVM_INFO rou_scoreboard.sv(87) @ 875: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 1416, Rou_Out[3] = 1416 
+# 885 Out_rand= 1 0 2 3
+# Rou_In[3]= 9265   Rou_Out[0]= 1568
+# Rou_In[2]= 6611   Rou_Out[1]= 9701
+# Rou_In[0]= 6921   Rou_Out[2]= 6613
+# Rou_In[1]= 4844   Rou_Out[3]= 5143
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 885: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 885: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 885: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 885: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 885: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 620 25e5 1417 19d5
+# 									Rou_Out: 264f 14a 6e8 11ce
+# UVM_INFO rou_mon.sv(28) @ 885: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 885: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 885: uvm_test_top.env.sb [rou_sb] Rou_In: 330 9807 1768 4558
+# UVM_INFO rou_scoreboard.sv(66) @ 885: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 4558, Rou_Out[0] = 4558 
+# UVM_INFO rou_scoreboard.sv(73) @ 885: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1768, Rou_Out[1] = 1768 
+# UVM_INFO rou_scoreboard.sv(80) @ 885: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 330, Rou_Out[2] = 330 
+# UVM_INFO rou_scoreboard.sv(87) @ 885: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9807, Rou_Out[3] = 9807 
+# 895 Out_rand= 1 0 2 3
+# Rou_In[3]= 6944   Rou_Out[0]= 9265
+# Rou_In[2]= 680   Rou_Out[1]= 6611
+# Rou_In[0]= 4071   Rou_Out[2]= 6921
+# Rou_In[1]= 3130   Rou_Out[3]= 4844
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 895: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 895: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 895: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 895: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 895: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2431 19d3 12ec 1b09
+# 									Rou_Out: 1417 19d5 25e5 620
+# UVM_INFO rou_mon.sv(28) @ 895: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 895: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 895: uvm_test_top.env.sb [rou_sb] Rou_In: 6613 5143 9701 1568
+# UVM_INFO rou_scoreboard.sv(66) @ 895: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1568, Rou_Out[0] = 1568 
+# UVM_INFO rou_scoreboard.sv(73) @ 895: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9701, Rou_Out[1] = 9701 
+# UVM_INFO rou_scoreboard.sv(80) @ 895: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 6613, Rou_Out[2] = 6613 
+# UVM_INFO rou_scoreboard.sv(87) @ 895: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 5143, Rou_Out[3] = 5143 
+# 905 Out_rand= 1 0 2 3
+# Rou_In[3]= 5431   Rou_Out[0]= 6944
+# Rou_In[2]= 6201   Rou_Out[1]= 680
+# Rou_In[0]= 8367   Rou_Out[2]= 4071
+# Rou_In[1]= 179   Rou_Out[3]= 3130
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 905: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 905: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 905: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 905: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 905: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1b20 2a8 c3a fe7
+# 									Rou_Out: 12ec 1b09 19d3 2431
+# UVM_INFO rou_mon.sv(28) @ 905: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 905: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 905: uvm_test_top.env.sb [rou_sb] Rou_In: 6921 4844 6611 9265
+# UVM_INFO rou_scoreboard.sv(66) @ 905: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9265, Rou_Out[0] = 9265 
+# UVM_INFO rou_scoreboard.sv(73) @ 905: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6611, Rou_Out[1] = 6611 
+# UVM_INFO rou_scoreboard.sv(80) @ 905: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 6921, Rou_Out[2] = 6921 
+# UVM_INFO rou_scoreboard.sv(87) @ 905: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 4844, Rou_Out[3] = 4844 
+# 915 Out_rand= 1 0 2 3
+# Rou_In[3]= 1492   Rou_Out[0]= 5431
+# Rou_In[2]= 5454   Rou_Out[1]= 6201
+# Rou_In[0]= 8555   Rou_Out[2]= 8367
+# Rou_In[1]= 9656   Rou_Out[3]= 179
+# Ola! Out_rand= 1 0 2 3
+# UVM_INFO rou_driver.sv(22) @ 915: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 915: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 915: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 915: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 915: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1537 1839 b3 20af
+# 									Rou_Out: c3a fe7 2a8 1b20
+# UVM_INFO rou_mon.sv(28) @ 915: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 915: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 915: uvm_test_top.env.sb [rou_sb] Rou_In: 4071 3130 680 6944
+# UVM_INFO rou_scoreboard.sv(66) @ 915: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 6944, Rou_Out[0] = 6944 
+# UVM_INFO rou_scoreboard.sv(73) @ 915: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 680, Rou_Out[1] = 680 
+# UVM_INFO rou_scoreboard.sv(80) @ 915: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4071, Rou_Out[2] = 4071 
+# UVM_INFO rou_scoreboard.sv(87) @ 915: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 3130, Rou_Out[3] = 3130 
+# 925 Out_rand= 1 0 2 3
+# Rou_In[3]= 6254   Rou_Out[0]= 1492
+# Rou_In[2]= 3038   Rou_Out[1]= 5454
+# Rou_In[0]= 8518   Rou_Out[2]= 8555
+# Rou_In[1]= 4629   Rou_Out[3]= 9656
+#           3
+# UVM_INFO rou_driver.sv(22) @ 925: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 925: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 925: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 925: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 925: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 5d4 154e 25b8 216b
+# 									Rou_Out: b3 20af 1839 1537
+# UVM_INFO rou_mon.sv(28) @ 925: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 925: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 925: uvm_test_top.env.sb [rou_sb] Rou_In: 8367 179 6201 5431
+# UVM_INFO rou_scoreboard.sv(66) @ 925: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5431, Rou_Out[0] = 5431 
+# UVM_INFO rou_scoreboard.sv(73) @ 925: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6201, Rou_Out[1] = 6201 
+# UVM_INFO rou_scoreboard.sv(80) @ 925: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8367, Rou_Out[2] = 8367 
+# UVM_INFO rou_scoreboard.sv(87) @ 925: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 179, Rou_Out[3] = 179 
+# 935 Out_rand= 0 2 3 1
+# Rou_In[1]= 7152   Rou_Out[0]= 6254
+# Rou_In[3]= 1117   Rou_Out[1]= 3038
+# Rou_In[2]= 9107   Rou_Out[2]= 8518
+# Rou_In[0]= 6570   Rou_Out[3]= 4629
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_driver.sv(22) @ 935: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 935: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 935: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 935: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 935: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 186e bde 1215 2146
+# 									Rou_Out: 25b8 216b 154e 5d4
+# UVM_INFO rou_mon.sv(28) @ 935: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 935: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 935: uvm_test_top.env.sb [rou_sb] Rou_In: 8555 9656 5454 1492
+# UVM_ERROR rou_scoreboard.sv(69) @ 935: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 9656, Rou_Out[0] = 1492   
+# UVM_ERROR rou_scoreboard.sv(76) @ 935: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 1492, Rou_Out[1] = 5454   
+# UVM_ERROR rou_scoreboard.sv(83) @ 935: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 5454, Rou_Out[2] = 8555   
+# UVM_ERROR rou_scoreboard.sv(90) @ 935: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 8555, Rou_Out[3] = 9656   
+# 945 Out_rand= 0 2 3 1
+# Rou_In[1]= 8030   Rou_Out[0]= 7152
+# Rou_In[3]= 15   Rou_Out[1]= 1117
+# Rou_In[2]= 3669   Rou_Out[2]= 9107
+# Rou_In[0]= 4445   Rou_Out[3]= 6570
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_driver.sv(22) @ 945: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 945: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 945: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 945: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 945: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 45d 2393 1bf0 19aa
+# 									Rou_Out: 1215 2146 bde 186e
+# UVM_INFO rou_mon.sv(28) @ 945: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 945: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 945: uvm_test_top.env.sb [rou_sb] Rou_In: 8518 4629 3038 6254
+# UVM_ERROR rou_scoreboard.sv(69) @ 945: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 4629, Rou_Out[0] = 6254   
+# UVM_ERROR rou_scoreboard.sv(76) @ 945: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[3] = 6254, Rou_Out[1] = 3038   
+# UVM_ERROR rou_scoreboard.sv(83) @ 945: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 3038, Rou_Out[2] = 8518   
+# UVM_ERROR rou_scoreboard.sv(90) @ 945: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[0] = 8518, Rou_Out[3] = 4629   
+# 955 Out_rand= 0 2 3 1
+# Rou_In[1]= 9001   Rou_Out[0]= 8030
+# Rou_In[3]= 2843   Rou_Out[1]= 15
+# Rou_In[2]= 8141   Rou_Out[2]= 3669
+# Rou_In[0]= 8309   Rou_Out[3]= 4445
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_driver.sv(22) @ 955: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 955: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 955: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 955: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 955: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: f e55 1f5e 115d
+# 									Rou_Out: 19aa 2393 45d 1bf0
+# UVM_INFO rou_mon.sv(28) @ 955: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 955: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 955: uvm_test_top.env.sb [rou_sb] Rou_In: 6570 7152 9107 1117
+# UVM_INFO rou_scoreboard.sv(66) @ 955: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7152, Rou_Out[0] = 7152 
+# UVM_INFO rou_scoreboard.sv(73) @ 955: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 1117, Rou_Out[1] = 1117 
+# UVM_INFO rou_scoreboard.sv(80) @ 955: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 9107, Rou_Out[2] = 9107 
+# UVM_INFO rou_scoreboard.sv(87) @ 955: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 6570, Rou_Out[3] = 6570 
+# 965 Out_rand= 0 2 3 1
+# Rou_In[1]= 7864   Rou_Out[0]= 9001
+# Rou_In[3]= 6652   Rou_Out[1]= 2843
+# Rou_In[2]= 4852   Rou_Out[2]= 8141
+# Rou_In[0]= 5116   Rou_Out[3]= 8309
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_driver.sv(22) @ 965: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 965: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 965: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 965: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 965: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: b1b 1fcd 2329 2075
+# 									Rou_Out: 115d e55 f 1f5e
+# UVM_INFO rou_mon.sv(28) @ 965: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 965: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 965: uvm_test_top.env.sb [rou_sb] Rou_In: 4445 8030 3669 15
+# UVM_INFO rou_scoreboard.sv(66) @ 965: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8030, Rou_Out[0] = 8030 
+# UVM_INFO rou_scoreboard.sv(73) @ 965: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 15, Rou_Out[1] = 15 
+# UVM_INFO rou_scoreboard.sv(80) @ 965: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 3669, Rou_Out[2] = 3669 
+# UVM_INFO rou_scoreboard.sv(87) @ 965: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 4445, Rou_Out[3] = 4445 
+# 975 Out_rand= 0 2 3 1
+# Rou_In[1]= 9267   Rou_Out[0]= 7864
+# Rou_In[3]= 5665   Rou_Out[1]= 6652
+# Rou_In[2]= 5930   Rou_Out[2]= 4852
+# Rou_In[0]= 5618   Rou_Out[3]= 5116
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_driver.sv(22) @ 975: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 975: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 975: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 975: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 975: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 19fc 12f4 1eb8 13fc
+# 									Rou_Out: 2075 1fcd b1b 2329
+# UVM_INFO rou_mon.sv(28) @ 975: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 975: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 975: uvm_test_top.env.sb [rou_sb] Rou_In: 8309 9001 8141 2843
+# UVM_INFO rou_scoreboard.sv(66) @ 975: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9001, Rou_Out[0] = 9001 
+# UVM_INFO rou_scoreboard.sv(73) @ 975: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 2843, Rou_Out[1] = 2843 
+# UVM_INFO rou_scoreboard.sv(80) @ 975: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 8141, Rou_Out[2] = 8141 
+# UVM_INFO rou_scoreboard.sv(87) @ 975: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8309, Rou_Out[3] = 8309 
+# 985 Out_rand= 0 2 3 1
+# Rou_In[1]= 7111   Rou_Out[0]= 9267
+# Rou_In[3]= 187   Rou_Out[1]= 5665
+# Rou_In[2]= 6208   Rou_Out[2]= 5930
+# Rou_In[0]= 7279   Rou_Out[3]= 5618
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_driver.sv(22) @ 985: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 985: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 985: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 985: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 985: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 1621 172a 2433 15f2
+# 									Rou_Out: 13fc 12f4 19fc 1eb8
+# UVM_INFO rou_mon.sv(28) @ 985: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 985: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 985: uvm_test_top.env.sb [rou_sb] Rou_In: 5116 7864 4852 6652
+# UVM_INFO rou_scoreboard.sv(66) @ 985: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7864, Rou_Out[0] = 7864 
+# UVM_INFO rou_scoreboard.sv(73) @ 985: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 6652, Rou_Out[1] = 6652 
+# UVM_INFO rou_scoreboard.sv(80) @ 985: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 4852, Rou_Out[2] = 4852 
+# UVM_INFO rou_scoreboard.sv(87) @ 985: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5116, Rou_Out[3] = 5116 
+# 995 Out_rand= 0 2 3 1
+# Rou_In[1]= 6903   Rou_Out[0]= 7111
+# Rou_In[3]= 3338   Rou_Out[1]= 187
+# Rou_In[2]= 675   Rou_Out[2]= 6208
+# Rou_In[0]= 1600   Rou_Out[3]= 7279
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_driver.sv(22) @ 995: uvm_test_top.env.agent.drv [rou_driver] ------------------------------------
+# UVM_INFO rou_driver.sv(23) @ 995: uvm_test_top.env.agent.drv [rou_driver] Inside driver
+# UVM_INFO rou_scoreboard.sv(97) @ 995: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 995: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 995: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: bb 1840 1bc7 1c6f
+# 									Rou_Out: 15f2 172a 1621 2433
+# UVM_INFO rou_mon.sv(28) @ 995: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 995: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 995: uvm_test_top.env.sb [rou_sb] Rou_In: 5618 9267 5930 5665
+# UVM_INFO rou_scoreboard.sv(66) @ 995: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 9267, Rou_Out[0] = 9267 
+# UVM_INFO rou_scoreboard.sv(73) @ 995: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 5665, Rou_Out[1] = 5665 
+# UVM_INFO rou_scoreboard.sv(80) @ 995: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 5930, Rou_Out[2] = 5930 
+# UVM_INFO rou_scoreboard.sv(87) @ 995: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 5618, Rou_Out[3] = 5618 
+# 1005 Out_rand= 0 2 3 1
+# Rou_In[1]= 8796   Rou_Out[0]= 6903
+# Rou_In[3]= 9559   Rou_Out[1]= 3338
+# Rou_In[2]= 1770   Rou_Out[2]= 675
+# Rou_In[0]= 8984   Rou_Out[3]= 1600
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_scoreboard.sv(97) @ 1005: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 1005: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 1005: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: d0a 2a3 1af7 640
+# 									Rou_Out: 1c6f 1840 bb 1bc7
+# UVM_INFO rou_mon.sv(28) @ 1005: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 1005: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 1005: uvm_test_top.env.sb [rou_sb] Rou_In: 7279 7111 6208 187
+# UVM_INFO rou_scoreboard.sv(66) @ 1005: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 7111, Rou_Out[0] = 7111 
+# UVM_INFO rou_scoreboard.sv(73) @ 1005: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 187, Rou_Out[1] = 187 
+# UVM_INFO rou_scoreboard.sv(80) @ 1005: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 6208, Rou_Out[2] = 6208 
+# UVM_INFO rou_scoreboard.sv(87) @ 1005: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 7279, Rou_Out[3] = 7279 
+# 1015 Out_rand= 0 2 3 1
+# Rou_In[1]= 8796   Rou_Out[0]= 8796
+# Rou_In[3]= 9559   Rou_Out[1]= 9559
+# Rou_In[2]= 1770   Rou_Out[2]= 1770
+# Rou_In[0]= 8984   Rou_Out[3]= 8984
+# Ola! Out_rand= 0 2 3 1
+# UVM_INFO rou_scoreboard.sv(97) @ 1015: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 1015: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 1015: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2557 6ea 225c 2318
+# 									Rou_Out: 640 2a3 d0a 1af7
+# UVM_INFO rou_mon.sv(28) @ 1015: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 1015: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 1015: uvm_test_top.env.sb [rou_sb] Rou_In: 1600 6903 675 3338
+# UVM_INFO rou_scoreboard.sv(66) @ 1015: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 6903, Rou_Out[0] = 6903 
+# UVM_INFO rou_scoreboard.sv(73) @ 1015: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 3338, Rou_Out[1] = 3338 
+# UVM_INFO rou_scoreboard.sv(80) @ 1015: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 675, Rou_Out[2] = 675 
+# UVM_INFO rou_scoreboard.sv(87) @ 1015: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 1600, Rou_Out[3] = 1600 
+# 1025 Out_rand= 0 2 3 1
+# Rou_In[1]= 8796   Rou_Out[0]= 8796
+# Rou_In[3]= 9559   Rou_Out[1]= 9559
+# Rou_In[2]= 1770   Rou_Out[2]= 1770
+# Rou_In[0]= 8984   Rou_Out[3]= 8984
+#           3
+# UVM_INFO rou_scoreboard.sv(97) @ 1025: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 1025: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 1025: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2557 6ea 225c 2318
+# 									Rou_Out: 2318 6ea 2557 225c
+# UVM_INFO rou_mon.sv(28) @ 1025: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 1025: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 1025: uvm_test_top.env.sb [rou_sb] Rou_In: 8984 8796 1770 9559
+# UVM_INFO rou_scoreboard.sv(66) @ 1025: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[1] = 8796, Rou_Out[0] = 8796 
+# UVM_INFO rou_scoreboard.sv(73) @ 1025: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9559, Rou_Out[1] = 9559 
+# UVM_INFO rou_scoreboard.sv(80) @ 1025: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[2] = 1770, Rou_Out[2] = 1770 
+# UVM_INFO rou_scoreboard.sv(87) @ 1025: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8984, Rou_Out[3] = 8984 
+# 1035 Out_rand= 0 1 3 2
+# Rou_In[2]= 1770   Rou_Out[0]= 8796
+# Rou_In[3]= 9559   Rou_Out[1]= 9559
+# Rou_In[1]= 8796   Rou_Out[2]= 1770
+# Rou_In[0]= 8984   Rou_Out[3]= 8984
+# Ola! Out_rand= 0 1 3 2
+# UVM_INFO rou_scoreboard.sv(97) @ 1035: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 1035: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 1035: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2557 6ea 225c 2318
+# 									Rou_Out: 2318 6ea 2557 225c
+# UVM_INFO rou_mon.sv(28) @ 1035: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 1035: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 1035: uvm_test_top.env.sb [rou_sb] Rou_In: 8984 8796 1770 9559
+# UVM_ERROR rou_scoreboard.sv(69) @ 1035: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 1770, Rou_Out[0] = 8796   
+# UVM_INFO rou_scoreboard.sv(73) @ 1035: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9559, Rou_Out[1] = 9559 
+# UVM_ERROR rou_scoreboard.sv(83) @ 1035: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 8796, Rou_Out[2] = 1770   
+# UVM_INFO rou_scoreboard.sv(87) @ 1035: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8984, Rou_Out[3] = 8984 
+# 1045 Out_rand= 0 1 3 2
+# Rou_In[2]= 1770   Rou_Out[0]= 1770
+# Rou_In[3]= 9559   Rou_Out[1]= 9559
+# Rou_In[1]= 8796   Rou_Out[2]= 8796
+# Rou_In[0]= 8984   Rou_Out[3]= 8984
+# Ola! Out_rand= 0 1 3 2
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1045: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO rou_scoreboard.sv(97) @ 1045: uvm_test_top.env.sb [rou_sb] ------------------------------------
+# UVM_INFO rou_scoreboard.sv(98) @ 1045: uvm_test_top.env.sb [rou_sb] Inside SB
+# UVM_INFO rou_mon.sv(55) @ 1045: uvm_test_top.env.agent.monitor [rou_mon] en=1
+# 									Rou_In: 2557 6ea 225c 2318
+# 									Rou_Out: 2318 6ea 2557 225c
+# UVM_INFO rou_mon.sv(28) @ 1045: uvm_test_top.env.agent.monitor [rou_mon] ------------------------------------
+# UVM_INFO rou_mon.sv(29) @ 1045: uvm_test_top.env.agent.monitor [rou_mon] Inside Monitor
+# UVM_INFO rou_scoreboard.sv(57) @ 1045: uvm_test_top.env.sb [rou_sb] Rou_In: 8984 8796 1770 9559
+# UVM_ERROR rou_scoreboard.sv(69) @ 1045: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[2] = 1770, Rou_Out[0] = 8796   
+# UVM_INFO rou_scoreboard.sv(73) @ 1045: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[3] = 9559, Rou_Out[1] = 9559 
+# UVM_ERROR rou_scoreboard.sv(83) @ 1045: uvm_test_top.env.sb [rou_sb] - ::DATA MisMatch :: -Rou_In[1] = 8796, Rou_Out[2] = 1770   
+# UVM_INFO rou_scoreboard.sv(87) @ 1045: uvm_test_top.env.sb [rou_sb] - ::DATA Match:: - Rou_In[0] = 8984, Rou_Out[3] = 8984 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO : 1204
+# UVM_WARNING :    0
+# UVM_ERROR :   52
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [rou_driver]   202
+# [rou_mon]   317
+# [rou_sb]   733
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1045 ns  Iteration: 53  Instance: /top_tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430

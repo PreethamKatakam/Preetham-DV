@@ -1,0 +1,24 @@
+
+interface apb_if(input bit pclk,prst);
+
+//signals
+logic pwrite,psel,pen;
+logic [7:0]pwdata;
+logic [7:0]paddr;
+logic pready;
+logic [7:0]prdata;
+
+
+
+//clocking block
+/*clocking cb@(posedge pclk);
+default input #1 output #0;
+input prdata,pready;
+output pwrite,pwdata,paddr,psel,pen;
+endclocking*/
+
+//modports
+modport dut(input pclk,prst,pwrite,psel,pen,pwdata,paddr,output prdata,pready);
+//modport tb(input pclk,prst,pready,prdata,output pwrite,psel,pen,pwdata,paddr);
+endinterface
+
