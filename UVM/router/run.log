@@ -1,0 +1,10 @@
+# ** Error: (vsim-3763) SystemVerilog DPI cannot access file 'C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll'
+# 
+# No such file or directory. (errno = ENOENT)
+# Use the -help option for complete vsim usage.
+# vsim work.top_tb -assertdebug -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 2
+# Errors: 2, Warnings: 0
