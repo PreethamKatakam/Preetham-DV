@@ -1,0 +1,94 @@
+/*
+1.After CS whether the data transferring particular slave or not
+2.Check single CS IS ACTIVE at a time or not
+4.Full duplex data transferring
+5.Based on cnt if en is high or not
+6.For every clk MISO MOSI sampled / shift or not(check same intl reg)
+7.When one slave selected other should drive Z
+8.When both CS selected/deselected then it drives Z or not
+
+*/
+//After CS whether the data transferring particular slave or not
+property cs_data_tx;
+  (cs1_n ==0 || cs2_n == 0)
+  (cs1_n==0) ? int_mosi_m == int_mosi_s1 : int_mosi_m == int_mosi_s2;
+endproperty
+
+assert property (@(posedge clk) cs_data_tx);
+  `uvm_info(get_type_name(),"CORRECT cs_data_tx -> 1",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"DATA NOT cs_data_tx -> 1",UVM_LOW)
+      
+//Check single CS IS ACTIVE at a time or not
+property cs_active;
+  (cs1_n ==0 || cs2_n == 0)
+  (cs1_n==0) ? ($stable(cs1_n==0) throughout en) :($stable(cs2_n==0) throughout en);
+endproperty
+  
+  assert property(@(posedge clk) cs_active);
+    `uvm_info(get_type_name(),"slave selected-> 2",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"slave not selected-> 2",UVM_LOW)
+      
+      
+//Full duplex data transferring
+sequence cs1;
+  (int_mosi_m == int_mosi_s1 && int_miso_s1 == int_miso_m);
+endsequence
+    
+sequence cs2;
+  (int_mosi_m == int_mosi_s2 && int_miso_s2 == int_miso_m);
+endsequence
+
+property dt;
+  (cs1_n ==0 || cs2_n == 0)
+  (cs1_n==0) ? cs1 : cs2;
+endproperty
+    
+    assert property(@(posedge clk) dt);
+      `uvm_info(get_type_name(),"full duplex tx -> 3",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"full duplex NOT  tx -> 3",UVM_LOW)
+      
+// Based on cnt if en is high or not
+      assert property(@(cnt ==9) |-> $fell(en));
+    else
+      `uvm_info(get_type_name(),"EN not working",UVM_LOW)     
+      
+//For every clk MISO MOSI sampled / shift or not(check same intl reg)      
+      assert property(@(posedge clk && (cs1_n ==0 || cs2_n == 0) ) |-> int_mosi_m != $past(int_mosi_m);
+                      `uvm_info(get_type_name(),"MOSI sampled ",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"MOSI NOT sampled ",UVM_LOW)
+      
+      
+//When one slave selected other should drive Z
+sequence cs1;
+  (int_miso_s2 == 8'bz);
+endsequence
+    
+sequence cs2;
+  (int_miso_s1 == 8'bz);
+endsequence
+
+property dt;
+  (cs1_n ==0 || cs2_n == 0)
+  (cs1_n==0) ? cs1 : cs2;
+endproperty
+    
+    assert property(@(posedge clk) dt);
+      `uvm_info(get_type_name(),"full duplex tx -> 3",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"full duplex NOT  tx -> 3",UVM_LOW)      
+     
+      
+//When both CS selected/deselected then it drives Z or not
+property slaves_selected;
+  (cs1_n ==0 && cs2_n == 0) |-> 
+  (int_mosi_s1 == 8'bz && int_mosi_s2 == 8'bz);
+endproperty
+
+assert property (@(posedge clk) slaves_selected);
+  `uvm_info(get_type_name()," Z driven",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"Z not driven ",UVM_LOW)

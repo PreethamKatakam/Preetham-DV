@@ -1,0 +1,98 @@
+//    1
+property data;
+  (cs1_n == 0) |-> (int_mosi_m == int_mosi_s1 && int_miso_s1 == int_miso_m);
+  (cs2_n == 0) |-> (int_mosi_m == int_mosi_s2 && int_miso_s2 == int_miso_m);
+endproperty
+
+
+assert property (@(posedge clk)  (cnt==9) |-> data);
+    `uvm_info(get_type_name(),"CORRECT data -> 1",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"DATA NOT working -> 1",UVM_LOW)
+   
+    
+//		2/3
+    
+property cs_active;
+  (cs1_n == 0 || cs2_n == 0) |->
+    ((cs1_n == 0) ?
+      ($stable(cs1_n) ##9 $rose(cs1_n)) :
+      ($stable(cs2_n) ##9 $rose(cs2_n)));
+endproperty
+
+
+
+  assert property (@(posedge clk)  (cnt==9) |-> cs_active);
+    `uvm_info(get_type_name(),"CORRECT data -> 1",UVM_LOW)
+    else
+      `uvm_info(get_type_name(),"DATA NOT working -> 1",UVM_LOW)
+   
+  
+//		5
+      
+    
+property EN;
+  (cnt == 9) |-> (en == 0);
+endproperty
+
+    // Place this inside an initial or always block
+always @(posedge clk) begin
+  assert property (EN)
+    `uvm_info(get_type_name(), "en working based on CNT -> 5", UVM_LOW)
+  else
+    `uvm_info(get_type_name(), "en not working based on CNT -> 5", UVM_LOW);
+end
+
+
+
+
+//  		6
+property data_tx;
+  (cnt == 9 && (cs1_n == 0 || cs2_n == 0)) |->
+    ((cs1_n == 0) ?
+      (int_mosi_m == int_mosi_s1 && int_miso_s1 == int_miso_m) :
+      (int_mosi_m == int_mosi_s2 && int_miso_s2 == int_miso_m));
+endproperty
+
+
+
+ always @(posedge clk) begin
+  assert property (data_tx)
+    `uvm_info(get_type_name(), "CORRECT data -> 1", UVM_LOW)
+  else
+    `uvm_info(get_type_name(), "DATA NOT working -> 1", UVM_LOW);
+end
+
+    
+      
+//  	7	
+// Property: Only the selected slave drives the MISO line; the other is tri-stated
+property data_z;
+  (cs1_n == 0 || cs2_n == 0) |->
+    ((cs1_n == 0) ?
+      (int_miso_s2 === 8'bz) :
+      (int_miso_s1 === 8'bz));
+endproperty
+
+// Assertion
+always @(posedge clk) begin
+  assert property (data_z)
+    `uvm_info(get_type_name(), "CORRECT data on slaves -> 7", UVM_LOW)
+  else
+    `uvm_info(get_type_name(), "DATA NOT correct on slave -> 7", UVM_LOW);
+end
+
+//		8
+// Property: If both CS are active low or inactive high, both slaves' MISO lines must be tri-stated
+property cs_select;
+  ((cs1_n == 0 && cs2_n == 0) || (cs1_n == 1 && cs2_n == 1)) |->
+    (int_miso_s1 === 8'bz && int_miso_s2 === 8'bz);
+endproperty
+
+// Assertion
+always @(posedge clk) begin
+  assert property (cs_select)
+    `uvm_info(get_type_name(), "BOTH SLAVES SELECT: CORRECT data on slaves -> 8", UVM_LOW)
+  else
+    `uvm_info(get_type_name(), "BOTH SLAVES SELECT: DATA NOT correct on slave -> 8", UVM_LOW);
+end
